@@ -1,0 +1,485 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>Before the Group Chat · EAIT Group 14</title>
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Caveat:wght@500&family=Poppins:ital,wght@0,400;0,500;0,600;1,400&display=swap" rel="stylesheet">
+<style>
+/* swap --font for 'Montserrat' (and the link above) to change the whole deck */
+:root{--bg:#F4EFE6;--paper:#FBF8F2;--chip:#E9E2D4;--ink:#1C1B19;--grey:#7D786F;--line:#CFC7B8;--acc:#C8553D;
+  --font:'Poppins',system-ui,sans-serif;--hand:'Caveat','Bradley Hand',cursive}
+*{box-sizing:border-box}
+html,body{margin:0;height:100%;background:var(--bg);overflow:hidden;color:var(--ink);font-family:var(--font);-webkit-font-smoothing:antialiased}
+#deck{position:absolute;left:50%;top:50%;width:1920px;height:1080px;transform-origin:center}
+.slide{position:absolute;inset:0;opacity:0;visibility:hidden;transition:opacity .5s,visibility .5s}
+.slide.active{opacity:1;visibility:visible}
+.abs{position:absolute}
+.acc{color:var(--acc)} .grey{color:var(--grey)}
+.h{position:absolute;left:160px;top:110px;margin:0;font:600 72px/1.15 var(--font);letter-spacing:-.02em}
+svg{overflow:visible}
+.ln{fill:none;stroke:var(--ink);stroke-width:4;stroke-linecap:round;stroke-linejoin:round}
+
+/* build steps: [data-step] appears on click n, [data-until] hides it again, [data-at] adds .at on click n */
+[data-step]{transition:opacity .45s ease-out var(--d,0s),transform .45s ease-out var(--d,0s),clip-path 1.6s cubic-bezier(.6,0,.3,1) var(--d,0s)}
+[data-step]:not(.on){opacity:0;transform:translateY(14px)}
+.wipe{clip-path:inset(0 0 0 0)}
+.wipe[data-step]:not(.on){opacity:1;transform:none;clip-path:inset(0 100% 0 0)}
+.drop{clip-path:inset(-40px -40px -40px -40px)}
+.drop[data-step]:not(.on){opacity:1;transform:none;clip-path:inset(-40px -40px 100% -40px)}
+.draw[data-step]:not(.on){opacity:1;transform:none}
+.draw [data-len]{stroke-dasharray:var(--len);stroke-dashoffset:0;transition:stroke-dashoffset 1.1s cubic-bezier(.6,0,.3,1) var(--d,0s)}
+.draw:not(.on) [data-len]{stroke-dashoffset:var(--len)}
+.grow-x,.grow-y{transition-duration:.9s}
+.grow-x{transform-origin:0 50%}
+.grow-x[data-step]:not(.on){opacity:1;transform:scaleX(0)}
+.grow-y{transform-box:fill-box;transform-origin:50% 100%}
+.grow-y[data-step]:not(.on){opacity:1;transform:scaleY(0)}
+[data-at]{transition:transform 1.1s cubic-bezier(.6,0,.2,1)}
+
+/* 1 · chat */
+.phone{left:700px;top:80px;width:500px;height:920px;border:3px solid var(--ink);border-radius:64px;background:var(--paper);padding:20px 22px;overflow:hidden}
+.phone.at{transform:translateX(-500px)}
+.notch{width:130px;height:30px;border-radius:15px;background:var(--ink);margin:0 auto 18px}
+.chat-head{font:600 26px var(--font);padding:4px 8px 18px;border-bottom:2px solid var(--line)}
+.chat{padding:18px 4px;display:flex;flex-direction:column;align-items:flex-start;gap:14px}
+.sep{align-self:center;font:600 18px var(--font);letter-spacing:.08em;text-transform:uppercase;color:var(--grey);background:var(--chip);border-radius:20px;padding:6px 16px;margin:6px 0}
+.msg{display:flex;align-items:flex-end;gap:12px}
+.msg>i{width:42px;height:42px;flex:none;border-radius:50%;background:var(--chip);font:600 18px/42px var(--font);text-align:center;font-style:normal}
+.msg p{display:inline-grid;margin:0;background:var(--chip);border-radius:24px 24px 24px 6px;padding:12px 20px;font:400 26px/1.3 var(--font);max-width:360px}
+.msg p>*{grid-area:1/1;align-self:center}
+.dots{display:flex;gap:6px}
+.dots i{width:9px;height:9px;border-radius:50%;background:var(--grey);animation:bob 1s infinite}
+.dots i:nth-child(2){animation-delay:.15s}.dots i:nth-child(3){animation-delay:.3s}
+@keyframes bob{0%,60%,100%{transform:none;opacity:.5}30%{transform:translateY(-5px);opacity:1}}
+.msg span{opacity:0}
+.msg.on .dots{animation:out .2s calc(var(--d,0s) + .9s) forwards}
+.msg.on span{animation:in .3s calc(var(--d,0s) + .9s) forwards}
+@keyframes out{to{opacity:0}} @keyframes in{to{opacity:1}}
+.msg.hot p{background:var(--acc);color:var(--paper)}
+.msg.hot .dots i{background:var(--paper)}
+.seen{align-self:flex-end;font:400 20px var(--font);color:var(--grey);margin-top:-6px}
+.big{font:600 84px/1.12 var(--font);letter-spacing:-.025em}
+
+/* 2 · audience */
+.chatrow{display:grid;grid-template-columns:64px 1fr auto;gap:26px;align-items:center;padding:14px 0;border-bottom:2px solid var(--line)}
+.chatrow>i{width:64px;height:64px;border-radius:50%;background:var(--chip);font:600 26px/64px var(--font);text-align:center;font-style:normal}
+.chatrow b{display:block;font:600 30px/1.25 var(--font)}
+.chatrow span{font:400 24px var(--font);color:var(--grey)}
+.chatrow em{font:500 24px var(--font);color:var(--grey);font-style:normal}
+
+/* 3 · skill */
+
+.sheet5{display:grid;grid-template-columns:repeat(5,1fr);gap:32px}
+.q{border-top:3px solid var(--ink);padding-top:20px}
+.q>i{font:600 44px/1 var(--font);color:var(--acc);font-style:normal}
+.q b{display:block;font:600 32px/1.2 var(--font);margin:12px 0 22px;min-height:78px}
+.q p{display:flex;gap:14px;font:400 26px/1.35 var(--font);margin:0 0 18px}
+.q svg{flex:none;margin-top:4px}
+.goal{left:160px;width:1600px;display:grid;grid-template-columns:400px 1fr;align-items:center;border-top:3px solid var(--ink);padding-top:24px}
+.goal .n{font:600 110px/1 var(--font);color:var(--acc);letter-spacing:-.03em}
+.goal b{display:block;font:500 38px/1.3 var(--font)}
+.goal b+span{display:block;font:400 28px/1.4 var(--font);color:var(--grey);margin-top:6px}
+/* 4 · the hour */
+.bar{display:flex;height:150px}
+.seg{height:150px;flex:none;background:var(--ink);color:var(--paper);padding:28px 18px;overflow:hidden;border-right:4px solid var(--bg);white-space:nowrap}
+.seg b{display:block;font:600 28px/1.2 var(--font)}
+.seg span{font:400 24px/1.6 var(--font);opacity:.75}
+.seg.out{background:transparent;color:var(--ink);box-shadow:inset 0 0 0 3px var(--ink)}
+.seg.r2{background:var(--acc)}
+.ticks span{position:absolute;transform:translateX(-50%);font:500 24px var(--font);color:var(--grey)}
+.stat{font:500 44px/1.3 var(--font)}
+
+/* 5 · card */
+.cardwrap{perspective:1800px}
+.cardwrap.at{transform:translateX(-600px)}
+.card{position:relative;width:100%;height:100%;transform-style:preserve-3d;transition:transform 1s cubic-bezier(.6,0,.2,1) var(--d,0s)}
+.card.at{transform:rotateY(180deg)}
+.face{position:absolute;inset:0;backface-visibility:hidden;-webkit-backface-visibility:hidden;border:3px solid var(--ink);border-radius:22px;background:var(--paper);overflow:hidden}
+.back{background:var(--chip)}
+.front{transform:rotateY(180deg);padding:44px 40px}
+.front .tag{font:600 22px var(--font);letter-spacing:.14em;text-transform:uppercase;color:var(--grey)}
+.front h3{font:600 64px/1.05 var(--font);letter-spacing:-.02em;margin:48px 0 28px}
+.front p{font:400 30px/1.4 var(--font);margin:0}
+.role{top:330px;width:290px;height:370px;perspective:1600px}
+.hatch{background:repeating-linear-gradient(45deg,var(--chip) 0 10px,#D9D0BF 10px 12px);box-shadow:inset 0 0 0 14px var(--chip),inset 0 0 0 16px var(--ink)}
+.role .front{padding:32px 26px}
+.role .front b{display:block;font:600 34px/1.15 var(--font);letter-spacing:-.01em;margin-bottom:18px}
+.role .front p{font:400 26px/1.4 var(--font);margin:0}
+.bubble{position:relative;display:inline-block;border:3px solid var(--ink);border-radius:36px;padding:20px 34px;font:italic 400 34px/1.35 var(--font);background:var(--bg);max-width:1080px;text-wrap:balance}
+.bubble::after{content:'';position:absolute;left:44px;bottom:-14px;width:24px;height:24px;background:var(--bg);border:solid;border-width:0 3px 3px 0;border-color:inherit;transform:rotate(45deg)}
+.move{margin-top:26px;font:600 26px var(--font)}
+.move i{font-weight:400;color:var(--grey);margin-left:12px}
+.hot .bubble{border-color:var(--acc)} .hot .move b{color:var(--acc)}
+
+/* 6 · measure */
+.ax{font:500 22px var(--font);fill:var(--grey)}
+.measure b{display:block;font:600 36px/1.2 var(--font)}
+.measure span{font:400 26px/1.4 var(--font);color:var(--grey)}
+
+/* 7 · feasibility */
+.paper{background:var(--paper);box-shadow:0 1px 0 rgba(28,27,25,.06),0 16px 36px rgba(28,27,25,.09)}
+.receipt{font:400 28px/2 var(--font);padding:40px 40px 26px}
+.receipt .row{display:flex;align-items:baseline}
+.receipt .row u{flex:1;border-bottom:3px dotted var(--line);margin:0 14px;text-decoration:none}
+.receipt hr{border:0;border-top:3px dashed var(--line);margin:16px 0}
+.who{display:flex;gap:44px;align-items:center}
+.who b{display:block;font:600 44px/1.2 var(--font);letter-spacing:-.01em}
+.who span{font:400 28px var(--font);color:var(--grey)}
+
+/* 8 · close */
+.pledge{padding:52px 64px}
+.pledge small{display:block;font:400 26px var(--font);color:var(--grey);margin-top:26px}
+.pledge small:first-child{margin-top:0}
+.pl-line{border-bottom:2px solid var(--line);min-height:66px}
+.hand{display:inline-block;font:500 52px/1.25 var(--hand)}
+.title{left:0;right:0;text-align:center;font:600 132px/1 var(--font);letter-spacing:-.035em}
+.sub{left:0;right:0;text-align:center;font:400 48px var(--font);color:var(--grey)}
+</style>
+</head>
+<body>
+<div id="deck">
+
+<!-- 1 · THE CHAT THAT DIED -->
+<section class="slide">
+  <div class="abs phone" data-at="4">
+    <div class="notch"></div>
+    <div class="chat-head">ENGG1100 · Team 7</div>
+    <div class="chat">
+      <div class="sep">Week 1</div>
+      <div class="msg" data-step="1" style="--d:0s"><i>P</i><p><i class="dots"><i></i><i></i><i></i></i><span>hey team 👋</span></p></div>
+      <div class="msg" data-step="1" style="--d:1.1s"><i>J</i><p><i class="dots"><i></i><i></i><i></i></i><span>hi!</span></p></div>
+      <div class="msg" data-step="1" style="--d:2.2s"><i>M</i><p><i class="dots"><i></i><i></i><i></i></i><span>let's make a group chat</span></p></div>
+      <div class="msg" data-step="1" style="--d:3.3s"><i>T</i><p><i class="dots"><i></i><i></i><i></i></i><span>👍</span></p></div>
+      <div class="seen" data-step="2">Seen by 4</div>
+      <div class="sep" data-step="2" style="--d:.7s">Week 4</div>
+      <div class="sep" data-step="2" style="--d:1.5s">Week 7</div>
+      <div class="sep" data-step="3">Week 8</div>
+      <div class="msg hot" data-step="3" style="--d:.4s"><i>J</i><p><i class="dots"><i></i><i></i><i></i></i><span>is anyone working on this?? due friday</span></p></div>
+    </div>
+  </div>
+  <div class="abs" style="left:820px;top:300px;width:960px">
+    <div class="big" data-step="4" style="--d:.7s">Teams don't fail<br>in week 8.</div>
+    <div class="big" data-step="4" style="--d:1.5s;margin-top:40px">They fail in<br><span class="acc">week 1.</span></div>
+  </div>
+</section>
+
+<!-- 2 · WHO IT'S FOR -->
+<section class="slide">
+  <h2 class="h">First year is full of<br>first meetings.</h2>
+  <div class="abs" style="right:160px;top:100px;text-align:right">
+    <div class="count acc" data-step="1" data-to="12" data-dur="1600" style="font:600 220px/1 var(--font);letter-spacing:-.04em;--d:.1s">12</div>
+    <div data-step="1" style="font:600 44px/1.25 var(--font);--d:.5s">first meetings<br>in year one</div>
+    <div class="grey" data-step="1" style="font:400 32px var(--font);margin-top:12px;--d:.8s">our estimate</div>
+  </div>
+  <div class="abs" style="left:160px;top:320px;width:1000px">
+    <div class="chatrow" data-step="1" style="--d:0.0s"><i>E</i><div><b>ENGG1100 · Team 7</b><span>let's make a group chat</span></div><em>Week 1</em></div>
+    <div class="chatrow" data-step="1" style="--d:0.2s"><i>C</i><div><b>COMP1100 project group</b><span>hi everyone 👋</span></div><em>Week 1</em></div>
+    <div class="chatrow" data-step="1" style="--d:0.4s"><i>D</i><div><b>DECO1800 team</b><span>who's doing what?</span></div><em>Week 2</em></div>
+    <div class="chatrow" data-step="1" style="--d:0.6s"><i>S</i><div><b>Engineering society committee</b><span>welcome aboard!</span></div><em>O-Week</em></div>
+    <div class="chatrow" data-step="1" style="--d:0.8s"><i>H</i><div><b>Hackathon team</b><span>we have 48 hours lol</span></div><em>Week 6</em></div>
+    <div class="grey" data-step="1" style="font:600 32px var(--font);padding-top:18px;--d:1.1s">+ 7 more</div>
+  </div>
+  <div class="abs" data-step="2" style="left:160px;top:930px;font:500 48px var(--font);letter-spacing:-.01em">No habits yet. <span class="acc">Nobody teaches this.</span></div>
+</section>
+
+<!-- 3 · THE SKILL: THE FIRST-MEETING SHEET -->
+<section class="slide">
+  <h2 class="h" style="font-size:64px">Lead a group's first meeting:<br>strangers to a <span class="acc">written agreement</span><br>in 12 minutes.</h2>
+  <div class="abs grey" data-step="0" style="left:160px;top:355px;font:400 34px var(--font);--d:.4s">The agreement is one sheet. Five questions, ten boxes.</div>
+  <div class="abs sheet5" id="sheet" style="left:160px;top:450px;width:1600px"></div>
+  <div class="abs acc" data-step="2" style="left:160px;top:940px;font:600 36px var(--font);--d:1.6s">8 of 10 ticked is our Round 2 target.</div>
+</section>
+
+<!-- 4 · THREE NUMBERS -->
+<section class="slide">
+  <h2 class="h">Three numbers to hit.</h2>
+  <div class="abs goal" data-step="1" style="top:290px">
+    <div class="n"><span class="count" data-step="1" data-to="8">8</span>/10</div>
+    <div><b>boxes ticked on every group's Round 2 sheet</b><span>by the end of the hour · scored by the next table · up from Round 1</span></div>
+  </div>
+  <div class="abs goal" data-step="2" style="top:520px">
+    <div class="n"><span class="count" data-step="2" data-to="2">2</span> of 3</div>
+    <div><b>leader moves made by every player in Round 2</b><span>open the meeting · draw someone in · name the tension · ticked by the observer</span></div>
+  </div>
+  <div class="abs goal" data-step="3" style="top:750px">
+    <div class="n"><span class="count" data-step="3" data-to="50">50</span>%</div>
+    <div><b>lead or shape a real first meeting with the sheet</b><span>within 4 weeks · from the week 4 follow-up form</span></div>
+  </div>
+</section>
+
+<!-- 4 · THE HOUR -->
+<section class="slide">
+  <h2 class="h">One hour.<br>Two first meetings.</h2>
+  <div class="abs bar" style="left:160px;top:400px;width:1600px">
+    <div class="seg grow-x" data-step="0" style="width:133.3px;--d:.2s"><b>Hook</b><span>poll</span></div>
+    <div class="seg grow-x" data-step="0" style="width:400px;--d:.4s"><b>Round 1</b><span>no help</span></div>
+    <div class="seg grow-x" data-step="0" style="width:266.7px;--d:.6s"><b>Reveal</b><span>cards + scores</span></div>
+    <div class="seg grow-x out" data-step="0" style="width:213.3px;--d:.8s"><b>Teach</b><span>sheet + moves</span></div>
+    <div class="seg grow-x r2" data-step="0" style="width:373.3px;--d:1s"><b>Round 2</b><span>club committee</span></div>
+    <div class="seg grow-x" data-step="0" style="width:213.3px;--d:1.2s;border:0"><b>Pledge</b><span>+ exit card</span></div>
+  </div>
+  <div class="abs ticks" data-step="0" style="left:160px;top:572px;width:1600px;--d:1.4s">
+    <span style="left:0">0</span><span style="left:133.3px">5</span><span style="left:533.3px">20</span><span style="left:800px">30</span><span style="left:1013.3px">38</span><span style="left:1386.7px">52</span><span style="left:1600px">60</span>
+  </div>
+  <div class="abs stat" data-step="1" style="left:160px;top:700px"><b>8</b> minutes listening. <b class="acc">52</b> minutes doing.</div>
+  <div class="abs stat grey" data-step="2" style="left:160px;top:800px;font-size:36px">Round 2 is a club committee, not a course team:<br>a <b style="color:var(--ink)">different kind of group</b>, to test transfer.</div>
+</section>
+
+<!-- 5 · THE ROOM -->
+<section class="slide">
+  <h2 class="h">Five tables, two facilitators.</h2>
+  <svg class="abs" style="left:160px;top:240px" width="1600" height="767" viewBox="0 0 980 470">
+    <rect x="1" y="1" width="978" height="468" rx="12" fill="none" stroke="#CFC7B8" stroke-width="2.5"/>
+    <text x="28" y="50" data-step="0" data-until="1" style="font:600 26px Poppins,sans-serif" fill="#1C1B19">Round 1 · Course team</text>
+    <text x="28" y="50" data-step="1" style="font:600 26px Poppins,sans-serif" fill="#C8553D">Round 2 · Club committee</text>
+    <path d="M430 24 H550" stroke="#1C1B19" stroke-width="7" stroke-linecap="round"/>
+    <g><circle cx="600" cy="26" r="19" fill="#1C1B19"/><text x="600" y="33" text-anchor="middle" style="font:600 20px Poppins,sans-serif" fill="#FBF8F2">A</text></g>
+    <path d="M100 92 H880 Q920 92 920 132 V400 Q920 440 880 440 H100 Q60 440 60 400 V132 Q60 92 100 92 Z" fill="none" stroke="#C8553D" stroke-width="2.5" stroke-dasharray="1 10" stroke-linecap="round" opacity=".8"/>
+    <g id="tables"></g>
+    <g style="font:400 17px Poppins,sans-serif" fill="#1C1B19">
+      <circle cx="712" cy="32" r="8" fill="#1C1B19"/><text x="726" y="38">player</text>
+      <circle cx="812" cy="32" r="8" fill="#F4EFE6" stroke="#1C1B19" stroke-width="2.5"/><text x="826" y="38">observer</text>
+      <text x="704" y="64"><tspan font-weight="600">A</tspan> front · <tspan font-weight="600" fill="#C8553D">B</tspan> roams</text>
+    </g>
+    <g>
+      <animateMotion dur="18s" repeatCount="indefinite" path="M100 92 H880 Q920 92 920 132 V400 Q920 440 880 440 H100 Q60 440 60 400 V132 Q60 92 100 92 Z"/>
+      <circle r="19" fill="#C8553D"/><text y="7" text-anchor="middle" style="font:600 20px Poppins,sans-serif" fill="#FBF8F2">B</text>
+    </g>
+  </svg>
+</section>
+
+<!-- 6 · FIVE SECRETS -->
+<section class="slide">
+  <h2 class="h">Five players.<br>Five secrets.</h2>
+  <div class="abs role" data-step="0" style="left:160.0px;--d:0.00s"><div class="card" data-at="1" style="--d:0.00s"><div class="face hatch"></div><div class="face front"><b>The Shift Worker</b><p>Works Tue and Thu nights. Won't say unless asked.</p></div></div></div>
+  <div class="abs role" data-step="0" style="left:487.5px;--d:0.15s"><div class="card" data-at="1" style="--d:0.25s"><div class="face hatch"></div><div class="face front"><b>The Quiet One</b><p>Good ideas. Only speaks when asked directly.</p></div></div></div>
+  <div class="abs role" data-step="0" style="left:815.0px;--d:0.30s"><div class="card" data-at="1" style="--d:0.50s"><div class="face hatch"></div><div class="face front"><b>The HD Chaser</b><p>Wants a 7. Annoyed if others settle for a pass.</p></div></div></div>
+  <div class="abs role" data-step="0" style="left:1142.5px;--d:0.45s"><div class="card" data-at="1" style="--d:0.75s"><div class="face hatch"></div><div class="face front"><b>The Away One</b><p>Flying home in week 5, a week before it's due.</p></div></div></div>
+  <div class="abs role" data-step="0" style="left:1470.0px;--d:0.60s"><div class="card" data-at="1" style="--d:1.00s"><div class="face hatch"></div><div class="face front"><b>The Overloaded</b><p>Four courses, quietly anxious, says “all good”.</p></div></div></div>
+  <div class="abs" data-step="2" style="left:160px;top:780px;font:500 44px var(--font)">Nobody mentions theirs unless someone asks.</div>
+  <div class="abs grey" data-step="2" style="left:160px;top:850px;font:400 36px var(--font);--d:.6s">In Round 1, almost nobody does.</div>
+</section>
+
+<!-- 7 · THREE MOVES -->
+<section class="slide">
+  <h2 class="h">Three moves.<br>Any seat.</h2>
+  <div class="abs cardwrap" data-at="2" style="left:760px;top:330px;width:400px;height:560px">
+    <div class="card" data-at="1">
+      <div class="face back">
+        <svg width="100%" height="100%">
+          <defs><pattern id="hatch" width="16" height="16" patternUnits="userSpaceOnUse" patternTransform="rotate(45)"><path d="M0 0 V16" stroke="#CFC7B8" stroke-width="2.5"/></pattern></defs>
+          <rect x="20" y="20" width="354" height="514" rx="12" fill="url(#hatch)" stroke="#1C1B19" stroke-width="2"/>
+          <circle cx="197" cy="277" r="70" fill="#E9E2D4" stroke="#1C1B19" stroke-width="3"/>
+          <text x="197" y="297" text-anchor="middle" style="font:600 56px Poppins,sans-serif" fill="#1C1B19">12</text>
+        </svg>
+      </div>
+      <div class="face front">
+        <div class="tag">Role card</div>
+        <h3>The Quiet One</h3>
+        <p>You have good ideas but only speak when someone asks you directly.</p>
+      </div>
+    </div>
+  </div>
+  <div class="abs" data-step="2" style="left:680px;top:330px;--d:.6s">
+    <div class="bubble">“Can we take 10 minutes to plan before the group chat?”</div>
+    <div class="move"><b>Open the meeting</b><i>self mastery</i></div>
+  </div>
+  <div class="abs hot" data-step="3" style="left:680px;top:530px">
+    <div class="bubble">“We haven’t heard from you yet. What do you think?”</div>
+    <div class="move"><b>Draw in a quiet voice</b><i>empathy</i></div>
+  </div>
+  <div class="abs" data-step="4" style="left:680px;top:730px">
+    <div class="bubble">“Some of us want a 7, some want a pass. Let’s agree now.”</div>
+    <div class="move"><b>Name the tension</b><i>emotional awareness</i></div>
+  </div>
+  <div class="abs" data-step="5" style="left:160px;top:960px;font:400 30px var(--font)"><b>Resilience:</b> <span class="grey">fail safely in Round 1, fix it in Round 2.</span></div>
+</section>
+
+<!-- 7 · HOW WE'LL KNOW -->
+<section class="slide">
+  <h2 class="h">Same people.<br>Thirty minutes apart.</h2>
+  <svg class="abs" style="left:160px;top:330px" width="860" height="660">
+    <rect x="0" y="0" width="22" height="22" fill="none" stroke="#1C1B19" stroke-width="3"/><text class="ax" x="34" y="19" style="fill:#1C1B19">Round 1</text>
+    <rect x="180" y="0" width="22" height="22" fill="#C8553D"/><text class="ax" x="214" y="19" style="fill:#1C1B19">Round 2</text><text class="ax" x="860" y="19" text-anchor="end">sheet score / 10</text>
+    <text class="ax" x="40" y="566" text-anchor="end">0</text><text class="ax" x="40" y="341" text-anchor="end">5</text><text class="ax" x="40" y="116" text-anchor="end">10</text>
+    <path d="M60 560 H860" stroke="#1C1B19" stroke-width="3"/>
+    <g id="bars"></g>
+    <g data-step="2" style="--d:.6s">
+      <path d="M60 200 H860" stroke="#1C1B19" stroke-width="2" stroke-dasharray="8 8"/>
+      <text class="ax" x="860" y="186" text-anchor="end" style="fill:#1C1B19">target 8</text>
+    </g>
+    <text data-step="3" x="160" y="100" text-anchor="middle" style="font:600 64px Poppins,sans-serif" fill="#C8553D">3 → 9</text>
+    <text class="ax" x="60" y="640" style="font-style:italic">Illustrative until our pilot</text>
+  </svg>
+  <div class="abs" data-step="4" style="left:1160px;top:330px;display:grid;gap:44px">
+    <div class="measure"><b>Sheet score</b><span>boxes ticked out of 10, Round 1 vs 2</span></div>
+    <div class="measure"><b>Leader-move tally</b><span>observer ticks each move, per player</span></div>
+    <div class="measure"><b>Exit card</b><span>confidence 1 to 5, before vs now</span></div>
+    <div class="measure"><b class="acc">Week 4 form</b><span>did you lead a first meeting?</span></div>
+  </div>
+</section>
+
+<!-- 8 · CAN IT RUN AT UQ -->
+<section class="slide">
+  <h2 class="h">$95 and a tutorial room.</h2>
+  <div class="abs drop" data-step="1" style="left:160px;top:280px;width:580px">
+    <div class="paper receipt">
+      <div class="grey" style="text-align:center;font-size:24px">1 session · 30 students</div>
+      <hr>
+      <div class="row">Printing<u></u>$30</div>
+      <div class="row">Snacks<u></u>$40</div>
+      <div class="row">Follow-up prize<u></u>$25</div>
+      <div class="row">Room + online tools<u></u>$0</div>
+      <hr>
+      <div class="row" style="font-weight:600;font-size:36px">Total<u></u><span class="acc">$95</span></div>
+    </div>
+    <svg width="580" height="16" style="display:block"><path id="zig" fill="#FBF8F2"/></svg>
+  </div>
+  <div class="abs who" data-step="2" style="left:880px;top:300px">
+    <svg class="draw" data-step="2" width="110" height="110" viewBox="0 0 72 72"><circle class="ln" pathLength="1" cx="26" cy="24" r="10" style="stroke-width:3"/><path class="ln" pathLength="1" style="stroke-width:3" d="M8 60 C8 42 44 42 44 60"/><circle class="ln" pathLength="1" style="stroke-width:3" cx="50" cy="28" r="8"/><path class="ln" pathLength="1" style="stroke-width:3" d="M48 44 C58 44 66 50 66 60"/></svg>
+    <div><b>Two EAIT Ambassadors</b><span>30-minute briefing</span></div>
+  </div>
+  <div class="abs who" data-step="3" style="left:880px;top:510px">
+    <svg class="draw" data-step="3" width="110" height="110" viewBox="0 0 72 72"><rect class="ln" pathLength="1" style="stroke-width:3" x="20" y="8" width="32" height="54" rx="2"/><circle cx="45" cy="37" r="3" fill="#1C1B19"/><path class="ln" pathLength="1" style="stroke-width:3" d="M8 62 H64"/></svg>
+    <div><b>Any tutorial room</b><span>five tables and a screen</span></div>
+  </div>
+  <div class="abs who" data-step="4" style="left:880px;top:720px">
+    <svg class="draw" data-step="4" width="110" height="110" viewBox="0 0 72 72"><rect class="ln" pathLength="1" style="stroke-width:3" x="8" y="14" width="56" height="50" rx="4"/><path class="ln" pathLength="1" style="stroke-width:3" d="M8 28 H64 M22 8 V20 M50 8 V20"/><circle cx="22" cy="45" r="5" fill="#C8553D"/><circle cx="36" cy="45" r="5" fill="#C8553D"/><circle cx="50" cy="45" r="5" fill="#C8553D"/></svg>
+    <div><b>Week 1, three sessions</b><span>promoted in ENGG1100, COMP1100, DECO1800</span></div>
+  </div>
+</section>
+
+<!-- 9 · CLOSE -->
+<section class="slide">
+  <div class="abs" data-step="0" data-until="4" style="left:410px;top:200px;width:1100px">
+    <div class="paper pledge">
+      <small>In my next first meeting, I'll open by</small>
+      <div class="pl-line"><span class="hand wipe" data-step="1">asking for 10 minutes to agree how we'll work</span></div>
+      <small>I'll make sure this person gets heard:</small>
+      <div class="pl-line"><span class="hand wipe" data-step="2">whoever hasn't spoken yet</span></div>
+      <small>When I sense tension, I'll say</small>
+      <div class="pl-line"><span class="hand wipe" data-step="3">let's sort this out now, not in week 8</span></div>
+    </div>
+  </div>
+  <div class="abs title" data-step="4" style="top:400px;--d:.4s">Before the Group Chat</div>
+  <div class="abs sub" data-step="4" style="top:580px;--d:.8s">Be the one who starts it.</div>
+</section>
+
+</div>
+
+<script>
+const $ = s => document.querySelector(s);
+// ?still renders every build instantly (for screenshots and PDF export)
+const still = location.search.includes('still');
+if (still) document.head.insertAdjacentHTML('beforeend', '<style>*,*::before,*::after{transition:none!important;animation-duration:0s!important;animation-delay:0s!important}</style>');
+
+// slide 3: the First-Meeting Sheet. 5 questions x 2 boxes; boxes 2 and 9 stay unticked
+(() => {
+  const Q = [['Who are we?', 'How we reach each other, and reply time', 'One strength each'],
+             ["What's the goal?", 'Target grade or outcome', 'The goal in one sentence'],
+             ['Who does what?', 'Named roles', 'First task: who, by when'],
+             ['When do we work?', 'A weekly meeting time', 'Our deadline, before the real one'],
+             ['What if it goes wrong?', "Everyone's busy weeks", 'Rule for missed deadlines']];
+  let n = 0;
+  const box = () => {
+    const tick = n !== 1 && n !== 8, d = (.15 * n++).toFixed(2);
+    return `<svg class="draw" data-step="2" style="--d:${d}s" width="28" height="28"><rect x="1.5" y="1.5" width="25" height="25" rx="4" fill="none" stroke="#1C1B19" stroke-width="3"/>` +
+      (tick ? '<path pathLength="1" d="M6 14.5 L11.5 20 L22 7.5" fill="none" stroke="#C8553D" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/>' : '') + '</svg>';
+  };
+  $('#sheet').innerHTML = Q.map(([q, a, b], i) =>
+    `<div class="q" data-step="1" style="--d:${(i * .15).toFixed(2)}s"><i>${i + 1}</i><b>${q}</b><p>${box()}${a}</p><p>${box()}${b}</p></div>`).join('');
+})();
+
+// slide 5: five tables of six, seat 5 is the observer
+(() => {
+  const T = [[200,180],[490,180],[780,180],[345,340],[635,340]];
+  const S = [[0,-62],[53.7,-31],[53.7,31],[0,62],[-53.7,31],[-53.7,-31]];
+  let h = '';
+  T.forEach(([x, y]) => {
+    h += `<circle cx="${x}" cy="${y}" r="38" fill="none" stroke="#1C1B19" stroke-width="3"/>`;
+    S.forEach(([dx, dy], i) => h += i === 4
+      ? `<circle cx="${x + dx}" cy="${y + dy}" r="12" fill="#F4EFE6" stroke="#1C1B19" stroke-width="3"/>`
+      : `<circle cx="${x + dx}" cy="${y + dy}" r="12" fill="#1C1B19"/>`);
+  });
+  $('#tables').innerHTML = h;
+})();
+
+// slide 7: round 1 vs round 2 bars (illustrative until the pilot)
+(() => {
+  const r1 = [3,4,2,5,3], r2 = [9,8,8,9,8];
+  let h = '';
+  r1.forEach((v, t) => {
+    const x = 60 + t * 160 + 30;
+    h += `<rect class="grow-y" data-step="1" style="--d:${t * .1}s" x="${x}" y="${560 - v * 45}" width="46" height="${v * 45}" fill="none" stroke="#1C1B19" stroke-width="3" vector-effect="non-scaling-stroke"/>`;
+    h += `<rect class="grow-y" data-step="2" style="--d:${t * .1}s" x="${x + 56}" y="${560 - r2[t] * 45}" width="46" height="${r2[t] * 45}" fill="#C8553D"/>`;
+    h += `<text class="ax" x="${x + 51}" y="598" text-anchor="middle">T${t + 1}</text>`;
+  });
+  $('#bars').innerHTML = h;
+})();
+
+// slide 8: receipt's torn bottom edge
+$('#zig').setAttribute('d', 'M0 0 H580 ' + Array.from({length: 29}, (_, i) => `L${570 - i * 20} 14 L${560 - i * 20} 0`).join(' ') + ' Z');
+
+// line drawings: measure each stroke so it can draw itself on
+document.querySelectorAll('[pathLength]').forEach(e => {
+  e.style.setProperty('--len', e.getTotalLength() + 1);
+  e.removeAttribute('pathLength');
+  e.setAttribute('data-len', '');
+});
+
+// deck engine: click / arrows / space to advance, F for fullscreen, #slide.step deep links
+const slides = [...document.querySelectorAll('.slide')];
+let s = -1, k = 0;
+const maxStep = i => Math.max(0, ...[...slides[i].querySelectorAll('[data-step],[data-at]')].map(e => +(e.dataset.step ?? e.dataset.at)));
+
+function countUp(e) {
+  const to = +e.dataset.to, dur = +(e.dataset.dur || 1000), t0 = performance.now();
+  const delay = (parseFloat(getComputedStyle(e).getPropertyValue('--d')) || 0) * 1000;
+  e.textContent = '0';
+  const tick = t => {
+    const p = Math.min(1, Math.max(0, (t - t0 - delay) / dur));
+    e.textContent = Math.round(to * (1 - (1 - p) ** 3));
+    if (p < 1) requestAnimationFrame(tick);
+  };
+  requestAnimationFrame(tick);
+}
+
+function render(changed) {
+  const cur = slides[s];
+  slides.forEach((el, i) => el.classList.toggle('active', i === s));
+  if (changed) { cur.querySelectorAll('.on,.at').forEach(e => e.classList.remove('on', 'at')); void cur.offsetWidth; }
+  cur.querySelectorAll('[data-step]').forEach(e => {
+    const on = k >= +e.dataset.step && !(e.dataset.until && k >= +e.dataset.until);
+    if (on && !still && !e.classList.contains('on') && e.classList.contains('count')) countUp(e);
+    e.classList.toggle('on', on);
+  });
+  cur.querySelectorAll('[data-at]').forEach(e => e.classList.toggle('at', k >= +e.dataset.at));
+  history.replaceState(null, '', location.search + '#' + (s + 1) + '.' + k);
+}
+
+function go(ns, nk) {
+  ns = Math.max(0, Math.min(slides.length - 1, ns));
+  const changed = ns !== s;
+  s = ns; k = Math.max(0, Math.min(maxStep(s), nk));
+  render(changed);
+}
+const next = () => k < maxStep(s) ? go(s, k + 1) : s < slides.length - 1 && go(s + 1, 0);
+const prev = () => k > 0 ? go(s, k - 1) : s > 0 && go(s - 1, maxStep(s - 1));
+
+addEventListener('keydown', e => {
+  if (['ArrowRight','ArrowDown','PageDown',' ','Enter'].includes(e.key)) { e.preventDefault(); next(); }
+  else if (['ArrowLeft','ArrowUp','PageUp','Backspace'].includes(e.key)) { e.preventDefault(); prev(); }
+  else if (e.key === 'f') document.documentElement.requestFullscreen?.();
+});
+addEventListener('click', next);
+const fit = () => $('#deck').style.transform = `translate(-50%,-50%) scale(${Math.min(innerWidth / 1920, innerHeight / 1080)})`;
+addEventListener('resize', fit); fit();
+
+const m = location.hash.match(/^#(\d+)(?:\.(\d+))?/);
+go(m ? m[1] - 1 : 0, m ? +(m[2] || 0) : 0);
+</script>
+</body>
+</html>
