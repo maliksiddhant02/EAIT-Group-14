@@ -10,7 +10,7 @@ A 60-minute workshop that teaches first-year EAIT students to lead a group's fir
 
 ```
 pitch/
-  deck.html        The pitch deck: 11 animated slides, about 6:30
+  deck.html        The pitch deck: title, 11 animated slides (about 6:35), then a Q&A screen
   script.md        Talking points per slide, click cues, timing, what to cut
 workshop/
   brief.md         The full workshop design: audience, objectives, run sheet,

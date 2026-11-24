@@ -150,6 +150,12 @@ svg{overflow:visible}
 .who b{display:block;font:600 44px/1.2 var(--font);letter-spacing:-.01em}
 .who span{font:400 28px var(--font);color:var(--grey)}
 
+/* 12 · questions (static: no builds, no fade) */
+.slide.instant{transition:none}
+.qs{list-style:none;margin:0;padding:0;display:grid;gap:34px;counter-reset:q}
+.qs li{display:flex;gap:28px;align-items:baseline;font:500 36px/1.35 var(--font);counter-increment:q}
+.qs li::before{content:counter(q);flex:none;width:44px;font:600 36px var(--font);color:var(--acc)}
+
 /* 8 · close */
 .pledge{padding:52px 64px}
 .pledge small{display:block;font:400 26px var(--font);color:var(--grey);margin-top:26px}
@@ -419,6 +425,18 @@ svg{overflow:visible}
   </div>
   <div class="abs title" data-step="4" style="top:400px;--d:.4s">Before the Group Chat</div>
   <div class="abs sub" data-step="4" style="top:580px;--d:.8s">Be the one who starts it.</div>
+</section>
+
+<!-- 12 · QUESTIONS (after "Thank you": one click, nothing animates) -->
+<section class="slide instant">
+  <h2 class="h">Questions?</h2>
+  <ol class="abs qs" style="left:160px;top:290px;width:1600px">
+    <li>How does a 7-chaser end up fine with a teammate happy to pass?</li>
+    <li>Why not just hand out the scorecard?</li>
+    <li>Isn't Round 2 better just because it's the second go?</li>
+    <li>What if students won't open up to strangers?</li>
+    <li>What do the student leaders get out of it?</li>
+  </ol>
 </section>
 
 </div>

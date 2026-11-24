@@ -137,6 +137,20 @@ The full wording is in `scripts/section-9-into-first-year.md`.
 - Close the loop with slide 1: that chat died because nobody led the meeting before it.
 - Anchor: *"You don't need a title to lead. Be the one who starts it."* Then "Thank you."
 
+
+## 12 · Questions screen · after the clock
+
+- After "Thank you", click **once** to bring this up, then **stop talking**. Don't present it. The point is that a judge put on the spot reads one of these out, and we've prepared every answer.
+- Prepared answers, about 20 seconds each. Whoever owns that part of the pitch answers.
+
+| # | Question on screen | Answer (who) |
+|---|---|---|
+| 1 | How does a 7-chaser end up fine with a teammate happy to pass? | **B.** We don't make them want the same grade; we make the gap visible in week 1. "Name the tension" puts it on the table, and "What's the goal?" gets a target everyone agreed to out loud. Then "Who does what?" lets the 7-chaser own the parts they care about, while the other teammate commits to a clear minimum. Feeling fine comes from knowing early, not from agreeing. |
+| 2 | Why not just hand out the scorecard? | **A.** Students ignore handouts. Round 1 makes them feel the gap first: they see their own 3/10 and the empty boxes. Then the scorecard is the answer to a problem they've just had, not homework. |
+| 3 | Isn't Round 2 better just because it's the second go? | **C.** Partly, and we say so. That's why Round 2 is a different kind of group, a student society rather than coursework. Repeating the same brief would test memory; a new context tests the skill. The week 4 form checks whether it carried over into a real team. |
+| 4 | What if students won't open up to strangers? | **B.** They don't have to. The role cards are fictional, so they talk about a character, not themselves. That distance is what makes Round 1 safe to fail. |
+| 5 | What do the student leaders get out of it? | **A.** Real practice leading a room: running a table, keeping time, scoring and giving feedback. The workshop builds leaders on both sides of the table, and it's a natural first step for later-year students into mentoring. |
+
 ---
 
 ## If you're running long
