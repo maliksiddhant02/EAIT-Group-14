@@ -141,15 +141,7 @@ The full wording is in `scripts/section-9-into-first-year.md`.
 ## 12 · Questions screen · after the clock
 
 - After "Thank you", click **once** to bring this up, then **stop talking**. Don't present it. The point is that a judge put on the spot reads one of these out, and we've prepared every answer.
-- Prepared answers, about 20 seconds each. Whoever owns that part of the pitch answers.
-
-| # | Question on screen | Answer (who) |
-|---|---|---|
-| 1 | What about the person who wants a 7 and won't budge? | **B.** They don't have to budge, and we never ask them to. The workshop moves the clash from week 8 to week 1. "Name the tension" puts it on the table, and "What's the goal?" gets a target said out loud. Then "Who does what?" lets them own the parts their 7 depends on, while everyone else commits to a clear minimum. They're fine because they know where everyone stands from day one. |
-| 2 | What if someone stays quiet, even after they're asked? | **B.** Then the move still worked: "draw in a quiet voice" is about making space, not forcing anyone. The first box on the scorecard, how we reach each other, gives quieter people another channel, like sending ideas in the chat afterwards. The student leader tallies the attempt, because the skill is the asking. |
-| 3 | What if nobody steps up to lead? | **A.** That's exactly what Round 1 shows. With nobody assigned, groups drift, and their 3/10 makes it obvious. Then we teach "open the meeting" as a move anyone can make from any seat, and in Round 2 someone does. |
-| 4 | What if a teammate agrees to everything, then disappears? | **C.** That's the Yes-Sayer, one of our role cards. Two boxes catch it early: "First task: who, by when" makes promises specific, and "Rule for missed deadlines" means the team agreed in week 1 what happens when someone slips. |
-| 5 | Won't they forget all this by week 8? | **C.** That's why they leave with a blank scorecard and a pledge for a real first meeting the same week. Our week 4 form checks whether they actually used it, and the target is half of respondents leading or shaping a first meeting. |
+- The prepared answers, and who gives each one, are in [`answers.md`](answers.md).
 
 ---
 
