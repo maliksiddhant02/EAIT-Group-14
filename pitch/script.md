@@ -17,6 +17,11 @@ These are talking points, not lines to memorise. Hit each point in your own word
 
 ---
 
+## 0 · Title card · before the clock starts
+
+- Have it on screen while the panel settles in. It doesn't count towards the 7 minutes.
+- When you're ready to start, click to slide 1 and begin.
+
 ## 1 · The chat that died · 0:00–0:40 · A
 
 - Open on the phone. Say nothing for a beat and let it sit.

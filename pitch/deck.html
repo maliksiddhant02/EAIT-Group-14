@@ -163,6 +163,15 @@ svg{overflow:visible}
 <body>
 <div id="deck">
 
+<!-- 0 · TITLE (up while setting up; click to slide 1 when the clock starts) -->
+<section class="slide">
+  <div class="abs" data-step="0" style="left:0;right:0;top:300px;display:flex;justify-content:center;--d:.2s">
+    <p style="margin:0;background:var(--chip);border-radius:30px 30px 30px 8px;padding:24px 32px"><i class="dots" style="gap:10px"><i style="width:14px;height:14px"></i><i style="width:14px;height:14px"></i><i style="width:14px;height:14px"></i></i></p>
+  </div>
+  <div class="abs title" data-step="0" style="top:430px;--d:.6s">Before the Group Chat</div>
+  <div class="abs sub" data-step="0" style="top:600px;--d:1s">A 60-minute workshop on leading the first meeting.</div>
+</section>
+
 <!-- 1 · THE CHAT THAT DIED -->
 <section class="slide">
   <div class="abs phone" data-at="4">
@@ -474,7 +483,7 @@ document.querySelectorAll('[pathLength]').forEach(e => {
   e.setAttribute('data-len', '');
 });
 
-// deck engine: click / arrows / space to advance, F for fullscreen, #slide.step deep links
+// deck engine: click / arrows / space to advance, F for fullscreen, #slide.step deep links (slide 0 is the title card)
 const slides = [...document.querySelectorAll('.slide')];
 let s = -1, k = 0;
 const maxStep = i => Math.max(0, ...[...slides[i].querySelectorAll('[data-step],[data-at]')].map(e => +(e.dataset.step ?? e.dataset.at)));
@@ -501,7 +510,7 @@ function render(changed) {
     e.classList.toggle('on', on);
   });
   cur.querySelectorAll('[data-at]').forEach(e => e.classList.toggle('at', k >= +e.dataset.at));
-  history.replaceState(null, '', location.search + '#' + (s + 1) + '.' + k);
+  history.replaceState(null, '', location.search + '#' + s + '.' + k);
 }
 
 function go(ns, nk) {
@@ -523,7 +532,7 @@ const fit = () => $('#deck').style.transform = `translate(-50%,-50%) scale(${Mat
 addEventListener('resize', fit); fit();
 
 const m = location.hash.match(/^#(\d+)(?:\.(\d+))?/);
-go(m ? m[1] - 1 : 0, m ? +(m[2] || 0) : 0);
+go(m ? +m[1] : 0, m ? +(m[2] || 0) : 0);
 </script>
 </body>
 </html>
