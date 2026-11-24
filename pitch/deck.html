@@ -78,10 +78,6 @@ svg{overflow:visible}
 .q b{display:block;font:600 32px/1.2 var(--font);margin:12px 0 22px;min-height:78px}
 .q p{display:flex;gap:14px;font:400 26px/1.35 var(--font);margin:0 0 18px}
 .q svg{flex:none;margin-top:4px}
-.goal{left:160px;width:1600px;display:grid;grid-template-columns:400px 1fr;align-items:center;border-top:3px solid var(--ink);padding-top:24px}
-.goal .n{font:600 110px/1 var(--font);color:var(--acc);letter-spacing:-.03em}
-.goal b{display:block;font:500 38px/1.3 var(--font)}
-.goal b+span{display:block;font:400 28px/1.4 var(--font);color:var(--grey);margin-top:6px}
 /* 4 · the hour */
 .bar{display:flex;height:150px}
 .seg{height:150px;flex:none;background:var(--ink);color:var(--paper);padding:28px 18px;overflow:hidden;border-right:4px solid var(--bg);white-space:nowrap}
@@ -116,8 +112,9 @@ svg{overflow:visible}
 
 /* 6 · measure */
 .ax{font:500 22px var(--font);fill:var(--grey)}
-.measure b{display:block;font:600 36px/1.2 var(--font)}
+.measure>b{display:block;font:600 36px/1.2 var(--font)}
 .measure span{font:400 26px/1.4 var(--font);color:var(--grey)}
+.measure span b{font-weight:600}
 
 /* 7 · feasibility */
 .paper{background:var(--paper);box-shadow:0 1px 0 rgba(28,27,25,.06),0 16px 36px rgba(28,27,25,.09)}
@@ -185,32 +182,7 @@ svg{overflow:visible}
   <div class="abs" data-step="2" style="left:160px;top:930px;font:500 48px var(--font);letter-spacing:-.01em">No habits yet. <span class="acc">Nobody teaches this.</span></div>
 </section>
 
-<!-- 3 · THE SKILL: THE FIRST-MEETING SHEET -->
-<section class="slide">
-  <h2 class="h" style="font-size:64px">Lead a group's first meeting:<br>strangers to a <span class="acc">written agreement</span><br>in 12 minutes.</h2>
-  <div class="abs grey" data-step="0" style="left:160px;top:355px;font:400 34px var(--font);--d:.4s">The agreement is one sheet. Five questions, ten boxes.</div>
-  <div class="abs sheet5" id="sheet" style="left:160px;top:450px;width:1600px"></div>
-  <div class="abs acc" data-step="2" style="left:160px;top:940px;font:600 36px var(--font);--d:1.6s">8 of 10 ticked is our Round 2 target.</div>
-</section>
-
-<!-- 4 · THREE NUMBERS -->
-<section class="slide">
-  <h2 class="h">Three numbers to hit.</h2>
-  <div class="abs goal" data-step="1" style="top:290px">
-    <div class="n"><span class="count" data-step="1" data-to="8">8</span>/10</div>
-    <div><b>boxes ticked on every group's Round 2 sheet</b><span>by the end of the hour · scored by the next table · up from Round 1</span></div>
-  </div>
-  <div class="abs goal" data-step="2" style="top:520px">
-    <div class="n"><span class="count" data-step="2" data-to="2">2</span> of 3</div>
-    <div><b>leader moves made by every player in Round 2</b><span>open the meeting · draw someone in · name the tension · ticked by the table's student leader</span></div>
-  </div>
-  <div class="abs goal" data-step="3" style="top:750px">
-    <div class="n"><span class="count" data-step="3" data-to="50">50</span>%</div>
-    <div><b>lead or shape a real first meeting with the sheet</b><span>within 4 weeks · from the week 4 follow-up form</span></div>
-  </div>
-</section>
-
-<!-- 4 · THE HOUR -->
+<!-- 3 · THE HOUR -->
 <section class="slide">
   <h2 class="h">One hour.<br>Two first meetings.</h2>
   <div class="abs bar" style="left:160px;top:400px;width:1600px">
@@ -226,6 +198,14 @@ svg{overflow:visible}
   </div>
   <div class="abs stat" data-step="1" style="left:160px;top:700px"><b>8</b> minutes listening. <b class="acc">52</b> minutes doing.</div>
   <div class="abs stat grey" data-step="2" style="left:160px;top:800px;font-size:36px">Round 2 is a club committee, not a course team:<br>a <b style="color:var(--ink)">different kind of group</b>, to test transfer.</div>
+</section>
+
+<!-- 4 · THE FIRST-MEETING SHEET -->
+<section class="slide">
+  <h2 class="h" style="font-size:64px">Lead a group's first meeting:<br>strangers to a <span class="acc">written agreement</span><br>in 12 minutes.</h2>
+  <div class="abs grey" data-step="0" style="left:160px;top:355px;font:400 34px var(--font);--d:.4s">The agreement is one sheet. Five questions, ten boxes.</div>
+  <div class="abs sheet5" id="sheet" style="left:160px;top:450px;width:1600px"></div>
+  <div class="abs acc" data-step="2" style="left:160px;top:940px;font:600 36px var(--font);--d:1.6s">8 of 10 ticked is our Round 2 target.</div>
 </section>
 
 <!-- 5 · THE ROOM -->
@@ -294,7 +274,7 @@ svg{overflow:visible}
   <div class="abs" data-step="5" style="left:160px;top:960px;font:400 30px var(--font)"><b>Resilience:</b> <span class="grey">fail safely in Round 1, fix it in Round 2.</span></div>
 </section>
 
-<!-- 7 · HOW WE'LL KNOW -->
+<!-- 8 · HOW WE'LL KNOW -->
 <section class="slide">
   <h2 class="h">Same people.<br>Thirty minutes apart.</h2>
   <svg class="abs" style="left:160px;top:330px" width="860" height="660">
@@ -311,14 +291,14 @@ svg{overflow:visible}
     <text class="ax" x="60" y="640" style="font-style:italic">Illustrative until our pilot</text>
   </svg>
   <div class="abs" data-step="4" style="left:1160px;top:330px;display:grid;gap:44px">
-    <div class="measure"><b>Sheet score</b><span>boxes ticked out of 10, Round 1 vs 2</span></div>
-    <div class="measure"><b>Leader-move tally</b><span>student leader ticks each move, per player</span></div>
+    <div class="measure"><b>Sheet score</b><span>boxes ticked out of 10 · <b class="acc">target 8</b></span></div>
+    <div class="measure"><b>Leader-move tally</b><span>by the student leader · <b class="acc">target 2 of 3 each</b></span></div>
     <div class="measure"><b>Exit card</b><span>confidence 1 to 5, before vs now</span></div>
-    <div class="measure"><b class="acc">Week 4 form</b><span>did you lead a first meeting?</span></div>
+    <div class="measure"><b>Week 4 form</b><span>led a real first meeting? · <b class="acc">target 50%</b></span></div>
   </div>
 </section>
 
-<!-- 8 · CAN IT RUN AT UQ -->
+<!-- 9 · CAN IT RUN AT UQ -->
 <section class="slide">
   <h2 class="h">$95 and a tutorial room.</h2>
   <div class="abs drop" data-step="1" style="left:160px;top:280px;width:580px">
@@ -348,7 +328,7 @@ svg{overflow:visible}
   </div>
 </section>
 
-<!-- 9 · CLOSE -->
+<!-- 10 · CLOSE -->
 <section class="slide">
   <div class="abs" data-step="0" data-until="4" style="left:410px;top:200px;width:1100px">
     <div class="paper pledge">
@@ -372,7 +352,7 @@ const $ = s => document.querySelector(s);
 const still = location.search.includes('still');
 if (still) document.head.insertAdjacentHTML('beforeend', '<style>*,*::before,*::after{transition:none!important;animation-duration:0s!important;animation-delay:0s!important}</style>');
 
-// slide 3: the First-Meeting Sheet. 5 questions x 2 boxes; boxes 2 and 9 stay unticked
+// slide 4: the First-Meeting Sheet. 5 questions x 2 boxes; boxes 2 and 9 stay unticked
 (() => {
   const Q = [['Who are we?', 'How we reach each other, and reply time', 'One strength each'],
              ["What's the goal?", 'Target grade or outcome', 'The goal in one sentence'],
@@ -389,7 +369,7 @@ if (still) document.head.insertAdjacentHTML('beforeend', '<style>*,*::before,*::
     `<div class="q" data-step="1" style="--d:${(i * .15).toFixed(2)}s"><i>${i + 1}</i><b>${q}</b><p>${box()}${a}</p><p>${box()}${b}</p></div>`).join('');
 })();
 
-// slide 6: five tables, five players each; the sixth seat is the student leader, who joins on click 1
+// slide 5: five tables, five players each; the sixth seat is the student leader, who joins on click 1
 (() => {
   const T = [[200,180],[490,180],[780,180],[345,340],[635,340]];
   const S = [[0,-62],[53.7,-31],[53.7,31],[0,62],[-53.7,-31],[-53.7,31]];
@@ -403,7 +383,7 @@ if (still) document.head.insertAdjacentHTML('beforeend', '<style>*,*::before,*::
   $('#tables').innerHTML = h;
 })();
 
-// slide 7: round 1 vs round 2 bars (illustrative until the pilot)
+// slide 8: round 1 vs round 2 bars (illustrative until the pilot)
 (() => {
   const r1 = [3,4,2,5,3], r2 = [9,8,8,9,8];
   let h = '';
@@ -416,7 +396,7 @@ if (still) document.head.insertAdjacentHTML('beforeend', '<style>*,*::before,*::
   $('#bars').innerHTML = h;
 })();
 
-// slide 8: receipt's torn bottom edge
+// slide 9: receipt's torn bottom edge
 $('#zig').setAttribute('d', 'M0 0 H580 ' + Array.from({length: 29}, (_, i) => `L${570 - i * 20} 14 L${560 - i * 20} 0`).join(' ') + ' Z');
 
 // line drawings: measure each stroke so it can draw itself on

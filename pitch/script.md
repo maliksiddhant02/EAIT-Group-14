@@ -2,7 +2,7 @@
 
 These are talking points, not lines to memorise. Hit each point in your own words. Lines in quotes are optional anchors, worth saying close to word for word.
 
-**Length:** 11 slides, about 6:20, with 40 seconds spare inside the 7-minute limit.
+**Length:** 10 slides, about 6:10, with 50 seconds spare inside the 7-minute limit.
 **Clicks:** `▸` marks one click. Every slide waits for your click, so you set the pace.
 **Speakers:** suggested 3-way split, shown as **A / B / C** below. Adjust it to your team size.
 
@@ -10,10 +10,10 @@ These are talking points, not lines to memorise. Hit each point in your own word
 
 | Checkpoint | You should be on |
 |---|---|
-| 1:05 | Slide 3 (the sheet) |
-| 2:50 | Slide 6 (the room) |
-| 4:40 | Slide 9 (the scores) |
-| 5:50 | Slide 11 (close) |
+| 1:05 | Slide 3 (the hour) |
+| 2:30 | Slide 5 (the room) |
+| 4:20 | Slide 8 (the scores) |
+| 5:40 | Slide 10 (close) |
 
 ---
 
@@ -28,6 +28,7 @@ These are talking points, not lines to memorise. Hit each point in your own word
   - Who's working Thursdays, who wants a 7, who goes quiet: nobody asked.
 - Anchor: *"Teams don't fail in week 8. They fail in week 1."*
 
+
 ## 2 · First year is full of first meetings · 0:40–1:05 · A
 
 - Audience: **first-year EAIT students, in O-Week**.
@@ -36,9 +37,26 @@ These are talking points, not lines to memorise. Hit each point in your own word
 - About a dozen in year one is our estimate, so say "about a dozen".
 - ▸ Why now: they have no habits yet, good or bad. Nobody teaches how to start a group.
 
-## 3 · The sheet · 1:05–1:50 · A
+- Hand-off: "So what happens in the hour?"
 
-- The skill, scoped tight: **lead a group's first meeting, from strangers to a written agreement in 12 minutes**.
+## 3 · One hour, two first meetings · 1:05–1:40 · A
+
+- The workshop in one line: in one hour, students run a group's first meeting **twice**, once cold and once with the toolkit.
+- Walk the bar left to right. The labels say what happens in each block:
+  - **Hook**: a live poll on everyone's worst first meeting.
+  - **Round 1**: a 12-minute first meeting, no help.
+  - **Reveal**: role cards read out, and sheets swapped with the next table and scored.
+  - **Teach**: the sheet (next slide) and the three moves.
+  - **Round 2**: a different kind of group.
+  - **Pledge**: write the pledge and fill in the exit card.
+- ▸ Only 8 minutes is listening. They're doing something for 52 of the 60.
+- ▸ Round 2 is a club committee, not a course team. It's a different kind of group on purpose, to test whether the skill transfers rather than whether they've memorised it.
+
+- Hand-off: "So what do they actually agree on in those 12 minutes?"
+
+## 4 · The sheet · 1:40–2:30 · A → hand to B
+
+- This is the agreement system both rounds use. The skill, scoped tight: **lead a group's first meeting, from strangers to a written agreement in 12 minutes**.
 - The "written agreement" is concrete. It's one sheet: five questions, two boxes each.
 - ▸ The five questions appear. Read the questions only, not every box:
   - Who are we?
@@ -48,28 +66,10 @@ These are talking points, not lines to memorise. Hit each point in your own word
   - What if it goes wrong?
 - Give one example box so it feels real: *"Our deadline, before the real one."* That's the box nobody fills in, and why week 8 happens.
 - ▸ Eight boxes tick. Two stay empty, because nobody gets a perfect score, and 8 of 10 is the Round 2 target.
-- Hand-off line: "That's what good looks like. Here's how we'll hold ourselves to it."
+- Hand-off: "So who's in the room?"
 
-## 4 · Three numbers to hit · 1:50–2:20 · A → hand to B
 
-Say each number with **what's counted, who counts it, and when**. Don't skip the "who": it's what makes the objectives measurable.
-- ▸ **8 of 10** boxes on every group's Round 2 sheet, by the end of the hour. The next table scores it, so nobody marks their own work.
-- ▸ **2 of 3** leader moves by every player in Round 2, ticked by the table's student leader. The three moves are coming up in a minute.
-- ▸ **50%** lead or shape a real first meeting within 4 weeks. We check with a 3-question form in week 4, counting people who reply.
-
-## 5 · One hour, two first meetings · 2:20–2:50 · B
-
-- Walk the bar left to right. The labels say what happens in each block:
-  - **Hook**: a live poll on everyone's worst first meeting.
-  - **Round 1**: a 12-minute first meeting, no help.
-  - **Reveal**: role cards read out, and sheets swapped with the next table and scored.
-  - **Teach**: the sheet and the three moves.
-  - **Round 2**: a different kind of group.
-  - **Pledge**: write the pledge and fill in the exit card.
-- ▸ Only 8 minutes is listening. They're doing something for 52 of the 60.
-- ▸ Round 2 is a club committee, not a course team. It's a different kind of group on purpose, to test whether the skill transfers rather than whether they've memorised it.
-
-## 6 · Five tables, five student leaders · 2:50–3:15 · B
+## 5 · Five tables, five student leaders · 2:30–2:55 · B
 
 - 25 students at 5 tables, five players each, so everyone in the room plays. Nobody sits out.
 - One EAIT Ambassador runs the front: the slides and the clock.
@@ -80,7 +80,8 @@ Say each number with **what's counted, who counts it, and when**. Don't skip the
 - Say what's in it for them: the student leaders get real practice leading a room. The workshop builds leaders on both sides of the table.
 - ▸ The label flips to Round 2. Same room, same people, different group.
 
-## 7 · Five players, five secrets · 3:15–3:40 · B
+
+## 6 · Five players, five secrets · 2:55–3:20 · B
 
 - Each player gets a secret role card.
 - ▸ The cards flip. Name two or three as they land:
@@ -91,7 +92,8 @@ Say each number with **what's counted, who counts it, and when**. Don't skip the
 - They're fictional on purpose, so nobody shares their own life.
 - ▸ Nobody mentions theirs unless someone asks, and in Round 1 almost nobody does. That's why the Round 1 sheets come back half empty.
 
-## 8 · Three moves, any seat · 3:40–4:40 · B → hand to C
+
+## 7 · Three moves, any seat · 3:20–4:20 · B → hand to C
 
 - **Live moment.** Before clicking, hand a judge the printed Quiet One card.
 - ▸ The card flips on screen. Turn to the judge.
@@ -105,19 +107,20 @@ Say each number with **what's counted, who counts it, and when**. Don't skip the
 - Backup if the judge won't play: a teammate plays the Quiet One.
 - Hand-off: "So how do we know it worked?"
 
-## 9 · Same people, thirty minutes apart · 4:40–5:20 · C
+
+## 8 · Same people, thirty minutes apart · 4:20–5:10 · C
 
 - ▸ Round 1 sheet scores are low, because nobody asks the five questions.
 - ▸ Round 2 clears the target of 8. ▸ Table 1 goes from 3 to 9.
 - **Be upfront:** these numbers are illustrative until our pilot. If we've piloted, swap in the real ones and lead with them.
-- ▸ The four measures map one-to-one onto the objectives:
-  - **Sheet score**, boxes ticked out of 10 from slide 3: objective 1.
-  - **Leader-move tally**: objective 2.
-  - **Week 4 form**: objective 3.
-  - **Exit card**: confidence before and after, as a bonus measure.
+- ▸ These four measures are our SMART objectives. Say each one with **what's counted, who counts it, and when**, because the "who" is what makes them measurable:
+  - **Sheet score:** 8 of 10 boxes on every group's Round 2 sheet, by the end of the hour. The next table scores it, so nobody marks their own work.
+  - **Leader-move tally:** every player makes 2 of the 3 moves in Round 2, ticked by their table's student leader.
+  - **Week 4 form:** half of the people who reply led or shaped a real first meeting within 4 weeks.
+  - **Exit card:** confidence from 1 to 5, before versus now. This one is a bonus measure.
 - Name the obvious objection before they do: some of the gain is just doing it twice. That's why Round 2 is a different kind of group.
 
-## 10 · $95 and a tutorial room · 5:20–5:50 · C
+## 9 · $95 and a tutorial room · 5:10–5:40 · C
 
 - ▸ The receipt: printing (the sheets, role cards and tally sheets), snacks, and a small prize to get people to fill in the week 4 form. **$95 a session.**
 - ▸ One Ambassador and five volunteer student leaders, with a 30-minute briefing.
@@ -125,7 +128,8 @@ Say each number with **what's counted, who counts it, and when**. Don't skip the
 - ▸ Week 1, three sessions, promoted through ENGG1100, COMP1100 and DECO1800.
 - The point: this could run next O-Week with nothing new built.
 
-## 11 · Close · 5:50–6:20 · C
+
+## 10 · Close · 5:40–6:10 · C
 
 - Everyone leaves with a blank sheet for their real team's first meeting, plus this pledge.
 - ▸ ▸ ▸ Read the pledge lines as they write themselves. Slow down here.
@@ -138,15 +142,15 @@ Say each number with **what's counted, who counts it, and when**. Don't skip the
 ## If you're running long
 
 Cut in this order:
-1. Slide 6: say one sentence and click through.
-2. Slide 5: skip the block-by-block walk and just say "52 of 60 minutes doing".
-3. Slide 10: show the receipt total only and skip the icons.
+1. Slide 5: say one sentence and click through.
+2. Slide 3: skip the block-by-block walk and just say "52 of 60 minutes doing".
+3. Slide 9: show the receipt total only and skip the icons.
 
-**Never cut** the sheet (slide 3), the live moment (slide 8) or the close.
+**Never cut** the sheet (slide 4), the live moment (slide 7) or the close.
 
 ## Likely questions
 
-The answers are in [`workshop-brief.md`](../workshop/brief.md) §7, "Likely panel questions":
+The answers are in [`workshop/brief.md`](../workshop/brief.md) §7, "Likely panel questions":
 - Isn't leadership too broad?
 - Why not just hand out a template?
 - What if students won't open up?
