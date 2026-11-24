@@ -145,11 +145,11 @@ The full wording is in `scripts/section-9-into-first-year.md`.
 
 | # | Question on screen | Answer (who) |
 |---|---|---|
-| 1 | How does a 7-chaser end up fine with a teammate happy to pass? | **B.** We don't make them want the same grade; we make the gap visible in week 1. "Name the tension" puts it on the table, and "What's the goal?" gets a target everyone agreed to out loud. Then "Who does what?" lets the 7-chaser own the parts they care about, while the other teammate commits to a clear minimum. Feeling fine comes from knowing early, not from agreeing. |
-| 2 | Why not just hand out the scorecard? | **A.** Students ignore handouts. Round 1 makes them feel the gap first: they see their own 3/10 and the empty boxes. Then the scorecard is the answer to a problem they've just had, not homework. |
-| 3 | Isn't Round 2 better just because it's the second go? | **C.** Partly, and we say so. That's why Round 2 is a different kind of group, a student society rather than coursework. Repeating the same brief would test memory; a new context tests the skill. The week 4 form checks whether it carried over into a real team. |
-| 4 | What if students won't open up to strangers? | **B.** They don't have to. The role cards are fictional, so they talk about a character, not themselves. That distance is what makes Round 1 safe to fail. |
-| 5 | What do the student leaders get out of it? | **A.** Real practice leading a room: running a table, keeping time, scoring and giving feedback. The workshop builds leaders on both sides of the table, and it's a natural first step for later-year students into mentoring. |
+| 1 | What about the person who wants a 7 and won't budge? | **B.** They don't have to budge, and we never ask them to. The workshop moves the clash from week 8 to week 1. "Name the tension" puts it on the table, and "What's the goal?" gets a target said out loud. Then "Who does what?" lets them own the parts their 7 depends on, while everyone else commits to a clear minimum. They're fine because they know where everyone stands from day one. |
+| 2 | What if someone stays quiet, even after they're asked? | **B.** Then the move still worked: "draw in a quiet voice" is about making space, not forcing anyone. The first box on the scorecard, how we reach each other, gives quieter people another channel, like sending ideas in the chat afterwards. The student leader tallies the attempt, because the skill is the asking. |
+| 3 | What if nobody steps up to lead? | **A.** That's exactly what Round 1 shows. With nobody assigned, groups drift, and their 3/10 makes it obvious. Then we teach "open the meeting" as a move anyone can make from any seat, and in Round 2 someone does. |
+| 4 | What if a teammate agrees to everything, then disappears? | **C.** That's the Yes-Sayer, one of our role cards. Two boxes catch it early: "First task: who, by when" makes promises specific, and "Rule for missed deadlines" means the team agreed in week 1 what happens when someone slips. |
+| 5 | Won't they forget all this by week 8? | **C.** That's why they leave with a blank scorecard and a pledge for a real first meeting the same week. Our week 4 form checks whether they actually used it, and the target is half of respondents leading or shaping a first meeting. |
 
 ---
 
