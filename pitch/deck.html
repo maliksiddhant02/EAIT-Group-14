@@ -526,6 +526,7 @@ addEventListener('keydown', e => {
   if (['ArrowRight','ArrowDown','PageDown',' ','Enter'].includes(e.key)) { e.preventDefault(); next(); }
   else if (['ArrowLeft','ArrowUp','PageUp','Backspace'].includes(e.key)) { e.preventDefault(); prev(); }
   else if (e.key === 'f') document.documentElement.requestFullscreen?.();
+  else if (e.key === 'Home') go(0, 0);
 });
 addEventListener('click', next);
 const fit = () => $('#deck').style.transform = `translate(-50%,-50%) scale(${Math.min(innerWidth / 1920, innerHeight / 1080)})`;

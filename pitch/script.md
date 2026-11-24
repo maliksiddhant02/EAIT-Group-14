@@ -2,7 +2,7 @@
 
 These are talking points, not lines to memorise. Hit each point in your own words. Lines in quotes are optional anchors, worth saying close to word for word.
 
-**Length:** 11 slides, about 6:30, with 30 seconds spare inside the 7-minute limit.
+**Length:** 11 slides plus the title card, about 6:35, with 25 seconds spare inside the 7-minute limit.
 **Clicks:** `▸` marks one click. Every slide waits for your click, so you set the pace.
 **Speakers:** suggested 3-way split, shown as **A / B / C** below. Adjust it to your team size.
 
@@ -17,12 +17,13 @@ These are talking points, not lines to memorise. Hit each point in your own word
 
 ---
 
-## 0 · Title card · before the clock starts
+## 0 · Title card · 0:00–0:05 · A
 
-- Have it on screen while the panel settles in. It doesn't count towards the 7 minutes.
-- When you're ready to start, click to slide 1 and begin.
+- Have it on screen while the panel settles in.
+- Start the pitch by saying the name out loud, before anything else: *"Our workshop is called **Before the Group Chat**."*
+- Then click to slide 1. The opening chat is the story behind the name, and the close says it again, so the name gets heard three times.
 
-## 1 · The chat that died · 0:00–0:40 · A
+## 1 · The chat that died · 0:05–0:45 · A
 
 - Open on the phone. Say nothing for a beat and let it sit.
 - ▸ The messages type in. It's a normal first meeting: everyone's friendly and someone makes a group chat.

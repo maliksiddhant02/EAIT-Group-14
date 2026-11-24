@@ -29,7 +29,7 @@ reference/
 ## Presenting the deck
 
 1. Open `pitch/deck.html` in Chrome. Open it once while online so the Poppins font loads.
-2. Press `F` for full screen. The deck opens on the title card (slide 0); leave it up while you set up.
+2. Press `F` for full screen. The deck opens on the title card (slide 0), as long as the address ends in plain `deck.html`. Press `Home` at any time to jump back to it.
 3. Click, or press `→` or a presentation clicker, to advance. Every animation waits for a click. Press `←` to go back.
 4. Add `#5.2` to the URL to jump to slide 5, click 2.
 5. Add `?still` to the URL to show every build at once. This is the version to print to PDF if the organisers need a file.
