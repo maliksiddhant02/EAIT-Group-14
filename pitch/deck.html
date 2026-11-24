@@ -9,7 +9,7 @@
 <link href="https://fonts.googleapis.com/css2?family=Caveat:wght@500&family=Poppins:ital,wght@0,400;0,500;0,600;1,400&display=swap" rel="stylesheet">
 <style>
 /* swap --font for 'Montserrat' (and the link above) to change the whole deck */
-:root{--bg:#F4EFE6;--paper:#FBF8F2;--chip:#E9E2D4;--ink:#1C1B19;--grey:#7D786F;--line:#CFC7B8;--acc:#C8553D;
+:root{--bg:#F4EFE6;--paper:#FBF8F2;--chip:#E9E2D4;--ink:#1C1B19;--grey:#7D786F;--line:#CFC7B8;--acc:#2E5E45;
   --font:'Poppins',system-ui,sans-serif;--hand:'Caveat','Bradley Hand',cursive}
 *{box-sizing:border-box}
 html,body{margin:0;height:100%;background:var(--bg);overflow:hidden;color:var(--ink);font-family:var(--font);-webkit-font-smoothing:antialiased}
@@ -150,12 +150,6 @@ svg{overflow:visible}
 .who b{display:block;font:600 44px/1.2 var(--font);letter-spacing:-.01em}
 .who span{font:400 28px var(--font);color:var(--grey)}
 
-/* 12 · questions (static: no builds, no fade) */
-.slide.instant{transition:none}
-.qs{list-style:none;margin:0;padding:0;display:grid;gap:52px;counter-reset:q}
-.qs li{display:flex;gap:30px;align-items:baseline;font:500 48px/1.25 var(--font);letter-spacing:-.01em;counter-increment:q}
-.qs li::before{content:counter(q);flex:none;width:44px;font:600 48px var(--font);color:var(--acc)}
-
 /* 8 · close */
 .pledge{padding:52px 64px}
 .pledge small{display:block;font:400 26px var(--font);color:var(--grey);margin-top:26px}
@@ -259,7 +253,7 @@ svg{overflow:visible}
   <div class="det" data-step="2" data-until="3" style="left:433px;--d:.4s"><i class="pin" style="left:59px"></i><div class="body"><div class="items">
     <div class="item"><svg width="64" height="64" viewBox="0 0 64 64"><circle cx="32" cy="12" r="7" fill="#1C1B19"/><circle cx="51" cy="26" r="7" fill="#1C1B19"/><circle cx="44" cy="49" r="7" fill="#1C1B19"/><circle cx="20" cy="49" r="7" fill="#1C1B19"/><circle cx="13" cy="26" r="7" fill="#1C1B19"/></svg><div><b>Groups of 5</b><span>their first ever meeting</span></div></div>
     <div class="item"><svg width="64" height="64" viewBox="0 0 64 64"><path class="ln" style="stroke-width:3.5" d="M16 6 H40 L50 16 V58 H16 Z M24 26 H42 M24 36 H42 M24 46 H36"/></svg><div><b>A fictional brief</b><span>coursework: ENGG1100, COMP1100</span></div></div>
-    <div class="item"><svg width="64" height="64" viewBox="0 0 64 64"><rect x="8" y="8" width="48" height="48" rx="8" fill="none" stroke="#1C1B19" stroke-width="3.5"/><path d="M18 33 L28 43 L47 21" fill="none" stroke="#C8553D" stroke-width="5" stroke-linecap="round" stroke-linejoin="round"/></svg><div><b>Scored live</b><span>by the student leader</span></div></div>
+    <div class="item"><svg width="64" height="64" viewBox="0 0 64 64"><rect x="8" y="8" width="48" height="48" rx="8" fill="none" stroke="#1C1B19" stroke-width="3.5"/><path d="M18 33 L28 43 L47 21" fill="none" stroke="#2E5E45" stroke-width="5" stroke-linecap="round" stroke-linejoin="round"/></svg><div><b>Scored live</b><span>by the student leader</span></div></div>
   </div></div></div>
   <div class="det" data-step="3" data-until="4" style="left:700px;--d:.4s"><i class="pin" style="left:59px"></i><div class="body" style="display:flex;align-items:center;gap:36px">
     <div class="bigscore">3<small>/10</small></div><p style="color:var(--ink)">The student leader reads out<br>each table's score.</p>
@@ -281,17 +275,17 @@ svg{overflow:visible}
   <svg class="abs" style="left:160px;top:240px" width="1600" height="767" viewBox="0 0 980 470">
     <rect x="1" y="1" width="978" height="468" rx="12" fill="none" stroke="#CFC7B8" stroke-width="2.5"/>
     <text x="28" y="50" data-step="0" data-until="2" style="font:600 26px Poppins,sans-serif" fill="#1C1B19">Round 1 · Coursework team</text>
-    <text x="28" y="50" data-step="2" style="font:600 26px Poppins,sans-serif" fill="#C8553D">Round 2 · Student society</text>
+    <text x="28" y="50" data-step="2" style="font:600 26px Poppins,sans-serif" fill="#2E5E45">Round 2 · Student society</text>
     <path d="M430 24 H550" stroke="#1C1B19" stroke-width="7" stroke-linecap="round"/>
-    <path d="M100 92 H880 Q920 92 920 132 V390 Q920 430 880 430 H100 Q60 430 60 390 V132 Q60 92 100 92 Z" fill="none" stroke="#C8553D" stroke-width="2.5" stroke-dasharray="1 10" stroke-linecap="round" opacity=".7" data-step="1" style="--d:1s"/>
-    <circle data-step="1" style="--d:1s" cx="600" cy="26" r="14" fill="#C8553D"/>
+    <path d="M100 92 H880 Q920 92 920 132 V390 Q920 430 880 430 H100 Q60 430 60 390 V132 Q60 92 100 92 Z" fill="none" stroke="#2E5E45" stroke-width="2.5" stroke-dasharray="1 10" stroke-linecap="round" opacity=".7" data-step="1" style="--d:1s"/>
+    <circle data-step="1" style="--d:1s" cx="600" cy="26" r="14" fill="#2E5E45"/>
     <g id="tables"></g>
     <g style="font:400 17px Poppins,sans-serif" fill="#1C1B19">
       <circle cx="700" cy="32" r="8" fill="#1C1B19"/><text x="714" y="38">player</text>
-      <circle cx="790" cy="32" r="8" fill="#C8553D"/><text x="804" y="38">student leader</text>
+      <circle cx="790" cy="32" r="8" fill="#2E5E45"/><text x="804" y="38">student leader</text>
       <text x="700" y="66">+ 2 on the floor: front, roaming</text>
     </g>
-    <g data-step="1" style="--d:1s"><animateMotion dur="18s" repeatCount="indefinite" path="M100 92 H880 Q920 92 920 132 V390 Q920 430 880 430 H100 Q60 430 60 390 V132 Q60 92 100 92 Z"/><circle r="14" fill="#C8553D"/></g>
+    <g data-step="1" style="--d:1s"><animateMotion dur="18s" repeatCount="indefinite" path="M100 92 H880 Q920 92 920 132 V390 Q920 430 880 430 H100 Q60 430 60 390 V132 Q60 92 100 92 Z"/><circle r="14" fill="#2E5E45"/></g>
     <text data-step="1" style="--d:1.4s;font:500 19px Poppins,sans-serif" x="490" y="459" text-anchor="middle" fill="#1C1B19">Each table's student leader holds the scorecard and reads out the score.</text>
   </svg>
 </section>
@@ -348,7 +342,7 @@ svg{overflow:visible}
   <h2 class="h">Same people.<br>Thirty minutes apart.</h2>
   <svg class="abs" style="left:160px;top:330px" width="860" height="660">
     <rect x="0" y="0" width="22" height="22" fill="none" stroke="#1C1B19" stroke-width="3"/><text class="ax" x="34" y="19" style="fill:#1C1B19">Round 1</text>
-    <rect x="180" y="0" width="22" height="22" fill="#C8553D"/><text class="ax" x="214" y="19" style="fill:#1C1B19">Round 2</text><text class="ax" x="860" y="19" text-anchor="end">scorecard / 10</text>
+    <rect x="180" y="0" width="22" height="22" fill="#2E5E45"/><text class="ax" x="214" y="19" style="fill:#1C1B19">Round 2</text><text class="ax" x="860" y="19" text-anchor="end">scorecard / 10</text>
     <text class="ax" x="40" y="566" text-anchor="end">0</text><text class="ax" x="40" y="341" text-anchor="end">5</text><text class="ax" x="40" y="116" text-anchor="end">10</text>
     <path d="M60 560 H860" stroke="#1C1B19" stroke-width="3"/>
     <g id="bars"></g>
@@ -356,7 +350,7 @@ svg{overflow:visible}
       <path d="M60 200 H860" stroke="#1C1B19" stroke-width="2" stroke-dasharray="8 8"/>
       <text class="ax" x="860" y="186" text-anchor="end" style="fill:#1C1B19">target 8</text>
     </g>
-    <text data-step="3" x="160" y="100" text-anchor="middle" style="font:600 64px Poppins,sans-serif" fill="#C8553D">3 → 9</text>
+    <text data-step="3" x="160" y="100" text-anchor="middle" style="font:600 64px Poppins,sans-serif" fill="#2E5E45">3 → 9</text>
     <text class="ax" x="60" y="640" style="font-style:italic">Illustrative until our pilot</text>
   </svg>
   <div class="abs" data-step="4" style="left:1160px;top:330px;display:grid;gap:44px">
@@ -376,7 +370,7 @@ svg{overflow:visible}
   </svg>
   <div class="node" data-step="1" style="left:400px"><div class="ring"><svg width="72" height="72" viewBox="0 0 72 72"><path class="ln" style="stroke-width:3.5" d="M10 26 L36 12 L62 26 Z M16 30 V54 M28 30 V54 M44 30 V54 M56 30 V54 M8 60 H64"/></svg></div><b>UQ Employability</b><span>funding and set-up</span></div>
   <div class="node" data-step="2" style="left:960px;--d:.6s"><div class="ring"><svg width="72" height="72" viewBox="0 0 72 72"><path class="ln" style="stroke-width:3.5" d="M10 30 V44 H20 L46 58 V16 L20 30 Z M20 44 L24 58 H30 L28 46 M54 28 Q60 37 54 46"/></svg></div><b>ENGG1100 · COMP1100</b><span>coordinators and mentors<br>spread the word</span></div>
-  <div class="node" data-step="3" style="left:1520px;--d:.6s"><div class="ring"><svg width="72" height="72" viewBox="0 0 72 72"><rect class="ln" style="stroke-width:3.5" x="8" y="14" width="56" height="50" rx="5"/><path class="ln" style="stroke-width:3.5" d="M8 28 H64 M22 8 V20 M50 8 V20"/><circle cx="22" cy="45" r="5" fill="#C8553D"/><circle cx="36" cy="45" r="5" fill="#C8553D"/><circle cx="50" cy="45" r="5" fill="#C8553D"/></svg></div><b>O-Week to week 2</b><span>runs alongside<br>the courses</span></div>
+  <div class="node" data-step="3" style="left:1520px;--d:.6s"><div class="ring"><svg width="72" height="72" viewBox="0 0 72 72"><rect class="ln" style="stroke-width:3.5" x="8" y="14" width="56" height="50" rx="5"/><path class="ln" style="stroke-width:3.5" d="M8 28 H64 M22 8 V20 M50 8 V20"/><circle cx="22" cy="45" r="5" fill="#2E5E45"/><circle cx="36" cy="45" r="5" fill="#2E5E45"/><circle cx="50" cy="45" r="5" fill="#2E5E45"/></svg></div><b>O-Week to week 2</b><span>runs alongside<br>the courses</span></div>
   <div class="abs strip" data-step="4" style="left:160px;top:720px;width:1600px"><div class="cell">O-Week<div class="fill" data-step="4" style="--d:0.50s">O-Week</div></div><div class="cell">Week 1<div class="fill" data-step="4" style="--d:0.75s">Week 1</div></div><div class="cell">Week 2<div class="fill" data-step="4" style="--d:1.00s">Week 2</div></div><div class="cell">Week 3</div><div class="cell">Week 4</div><div class="cell">Week 5</div><div class="cell">Week 6</div></div>
   <div class="abs grey" data-step="4" style="left:160px;top:840px;font:400 28px var(--font);--d:1.4s">Three sessions, before and alongside the first group projects.</div>
 </section>
@@ -406,7 +400,7 @@ svg{overflow:visible}
     <div><b>Any tutorial room</b><span>five tables and a screen</span></div>
   </div>
   <div class="abs who" data-step="4" style="left:880px;top:720px">
-    <svg class="draw" data-step="4" width="110" height="110" viewBox="0 0 72 72"><rect class="ln" pathLength="1" style="stroke-width:3" x="8" y="14" width="56" height="50" rx="4"/><path class="ln" pathLength="1" style="stroke-width:3" d="M8 28 H64 M22 8 V20 M50 8 V20"/><circle cx="22" cy="45" r="5" fill="#C8553D"/><circle cx="36" cy="45" r="5" fill="#C8553D"/><circle cx="50" cy="45" r="5" fill="#C8553D"/></svg>
+    <svg class="draw" data-step="4" width="110" height="110" viewBox="0 0 72 72"><rect class="ln" pathLength="1" style="stroke-width:3" x="8" y="14" width="56" height="50" rx="4"/><path class="ln" pathLength="1" style="stroke-width:3" d="M8 28 H64 M22 8 V20 M50 8 V20"/><circle cx="22" cy="45" r="5" fill="#2E5E45"/><circle cx="36" cy="45" r="5" fill="#2E5E45"/><circle cx="50" cy="45" r="5" fill="#2E5E45"/></svg>
     <div><b>O-Week to week 2</b><span>three sessions, alongside ENGG1100 and COMP1100</span></div>
   </div>
 </section>
@@ -425,18 +419,6 @@ svg{overflow:visible}
   </div>
   <div class="abs title" data-step="4" style="top:400px;--d:.4s">Before the Group Chat</div>
   <div class="abs sub" data-step="4" style="top:580px;--d:.8s">Be the one who starts it.</div>
-</section>
-
-<!-- 12 · QUESTIONS (after "Thank you": one click, nothing animates) -->
-<section class="slide instant">
-  <h2 class="h">Questions?</h2>
-  <ol class="abs qs" style="left:160px;top:280px;width:1640px">
-    <li>What about the person who wants a 7 and won't budge?</li>
-    <li>Why would a first-year give up an hour of O-Week for this?</li>
-    <li>What if a student leader is a weak facilitator?</li>
-    <li>Doesn't ENGG1100 already teach teamwork?</li>
-    <li>What if UQ Employability says no?</li>
-  </ol>
 </section>
 
 </div>
@@ -458,7 +440,7 @@ if (still) document.head.insertAdjacentHTML('beforeend', '<style>*,*::before,*::
   const box = () => {
     const tick = n !== 1 && n !== 8, d = (.15 * n++).toFixed(2);
     return `<svg class="draw" data-step="2" style="--d:${d}s" width="28" height="28"><rect x="1.5" y="1.5" width="25" height="25" rx="4" fill="none" stroke="#1C1B19" stroke-width="3"/>` +
-      (tick ? '<path pathLength="1" d="M6 14.5 L11.5 20 L22 7.5" fill="none" stroke="#C8553D" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/>' : '') + '</svg>';
+      (tick ? '<path pathLength="1" d="M6 14.5 L11.5 20 L22 7.5" fill="none" stroke="#2E5E45" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/>' : '') + '</svg>';
   };
   $('#sheet').innerHTML = Q.map(([q, a, b], i) =>
     `<div class="q" data-step="1" style="--d:${(i * .15).toFixed(2)}s"><i>${i + 1}</i><b>${q}</b><p>${box()}${a}</p><p>${box()}${b}</p></div>`).join('');
@@ -472,7 +454,7 @@ if (still) document.head.insertAdjacentHTML('beforeend', '<style>*,*::before,*::
   T.forEach(([x, y], t) => {
     h += `<circle cx="${x}" cy="${y}" r="38" fill="none" stroke="#1C1B19" stroke-width="3"/>`;
     S.forEach(([dx, dy], i) => h += i === 5
-      ? `<circle data-step="1" style="--d:${(t * .2).toFixed(1)}s" cx="${x + dx}" cy="${y + dy}" r="14" fill="#C8553D"/>`
+      ? `<circle data-step="1" style="--d:${(t * .2).toFixed(1)}s" cx="${x + dx}" cy="${y + dy}" r="14" fill="#2E5E45"/>`
       : `<circle cx="${x + dx}" cy="${y + dy}" r="12" fill="#1C1B19"/>`);
   });
   $('#tables').innerHTML = h;
@@ -485,7 +467,7 @@ if (still) document.head.insertAdjacentHTML('beforeend', '<style>*,*::before,*::
   r1.forEach((v, t) => {
     const x = 60 + t * 160 + 30;
     h += `<rect class="grow-y" data-step="1" style="--d:${t * .1}s" x="${x}" y="${560 - v * 45}" width="46" height="${v * 45}" fill="none" stroke="#1C1B19" stroke-width="3" vector-effect="non-scaling-stroke"/>`;
-    h += `<rect class="grow-y" data-step="2" style="--d:${t * .1}s" x="${x + 56}" y="${560 - r2[t] * 45}" width="46" height="${r2[t] * 45}" fill="#C8553D"/>`;
+    h += `<rect class="grow-y" data-step="2" style="--d:${t * .1}s" x="${x + 56}" y="${560 - r2[t] * 45}" width="46" height="${r2[t] * 45}" fill="#2E5E45"/>`;
     h += `<text class="ax" x="${x + 51}" y="598" text-anchor="middle">T${t + 1}</text>`;
   });
   $('#bars').innerHTML = h;

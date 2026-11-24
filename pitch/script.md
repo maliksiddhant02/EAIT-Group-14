@@ -138,11 +138,6 @@ The full wording is in `scripts/section-10-11-feasibility-and-close.md`. Slides 
   - ▸ Name the tension: emotional awareness. Doing it twice builds resilience.
 - ▸ The name appears. Anchor: *"All it takes to build a better team is a better first meeting. You don't need a title to lead. Be the one who starts it."* Pause, then "Thank you."
 
-## 12 · Questions screen · after the clock
-
-- After "Thank you", click **once** to bring this up, then **stop talking**. Don't present it. The point is that a judge put on the spot reads one of these out, and we've prepared every answer.
-- The prepared answers, and who gives each one, are in [`answers.md`](answers.md).
-
 ---
 
 ## If you're running long
@@ -155,6 +150,8 @@ Cut in this order:
 **Never cut** the scorecard (slide 3), the live moment (slide 7) or the close.
 
 ## Likely questions
+
+Prepared answers to the ten most likely questions are in [`qna.md`](qna.md). The brief also has a list:
 
 The answers are in [`workshop/brief.md`](../workshop/brief.md) §7, "Likely panel questions":
 - Isn't leadership too broad?

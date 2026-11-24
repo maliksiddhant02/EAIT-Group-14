@@ -1,6 +1,8 @@
-# Q&A screen: prepared answers
+# Q&A: likely questions and prepared answers
 
-These five questions are on the last slide. None of the answers appear on the slides, so a judge asking one is genuinely curious, and we're ready. Aim for about 20 seconds each. Answer, then stop; don't re-pitch.
+The ten questions we're most likely to get, with who answers each one (A, B or C). Aim for about 20 seconds per answer. Answer, then stop; don't re-pitch.
+
+Questions 1 to 5 go beyond what the slides say. Questions 6 to 10 push back on something the slides do show.
 
 ---
 
@@ -50,3 +52,29 @@ Then it still runs. It costs $95 a session, and it's run by student volunteers.
 - **Ask the faculty.** EAIT runs first-year transition events every year; at this price, this is an easy one to add.
 
 UQ Employability is the best fit, not the only one.
+
+---
+
+## 6. Isn't Round 2 better just because it's the second go? · C
+
+Partly, and we say so. That's exactly why Round 2 is a different kind of group: a student society instead of coursework. Repeating the same brief would test memory; a new context tests the skill. And the week 4 form checks whether it carried over into a real team.
+
+## 7. Isn't it biased if a table's own student leader does the scoring? · C
+
+It could be, so we've designed against it.
+
+- Every box on the scorecard has fixed wording: it's ticked or it isn't.
+- Leaders practise scoring the same sample meeting in their briefing, so they calibrate together.
+- The roaming floor leader spot-checks tables in both rounds.
+
+## 8. What if students won't open up to strangers? · B
+
+They don't have to. The role cards are fictional, so they talk about a character, not themselves. That distance is what makes Round 1 safe to fail, and it's why even quiet students play.
+
+## 9. Why first-years, not later years? · A
+
+Because first-years have every first meeting still ahead of them and no habits yet, good or bad. By third year the habits are set. One hour in O-Week shapes a dozen meetings that year.
+
+## 10. Isn't "leadership" too big a skill for one hour? · A
+
+Yes, which is why we don't teach leadership in general. We teach one leadership moment: the first meeting. That means one scorecard, three moves, and a score you can see go up in 30 minutes.
