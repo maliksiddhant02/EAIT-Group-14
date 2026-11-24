@@ -46,8 +46,8 @@ The rubric has 5 criteria with no weights given, so I've treated them as equal. 
 | **Why them, why now** | They're about to sit through a dozen first meetings, with teams, clubs and study groups, and they have no habits yet, good or bad. Nobody teaches this. |
 | **Skill** | Leading a group's first meeting: getting a new group from strangers to a written agreement in 12 minutes |
 | **Inner skills** | **Empathy** (drawing in quiet teammates), **emotional awareness** (naming tension early), **self mastery** (stepping up and owning commitments). **Resilience** comes from doing it badly, reflecting, and going again. |
-| **Format** | One 60-minute session, 30 people, 5 tables of 6 (5 players + 1 observer) |
-| **Run by** | 2 EAIT Ambassadors |
+| **Format** | One 60-minute session, 25 participants at 5 tables of 5, with a student leader at each table |
+| **Run by** | 1 EAIT Ambassador at the front, plus 5 student leaders: volunteers from later years, one per table |
 | **Where / when** | A booked tutorial room in week 1, run 3 times across the week, promoted through ENGG1100 / COMP1100 / DECO1800 course announcements and Ambassador channels |
 | **Cost** | About $95 per session (§7) |
 | **Takeaway** | A blank First-Meeting Sheet and a 3-line leader pledge |
@@ -57,27 +57,27 @@ The rubric has 5 criteria with no weights given, so I've treated them as equal. 
 ## 4. SMART objectives
 
 1. **Group:** by the end of the 60 minutes, each group's Round 2 agreement ticks **at least 8 of the 10** boxes on the First-Meeting Sheet, and scores higher than its Round 1 agreement.
-2. **Individual:** in Round 2, **every player makes at least 2 of the 3 leader moves** (open the meeting, draw in a quiet voice, name the tension), as tallied by their table's observer. Most should be up from Round 1.
+2. **Individual:** in Round 2, **every player makes at least 2 of the 3 leader moves** (open the meeting, draw in a quiet voice, name the tension), as tallied by their table's student leader. Most should be up from Round 1.
 3. **Lasting:** every participant leaves with a written 3-line leader pledge. Within 4 weeks, **at least half of follow-up respondents** report they led or shaped a first meeting, in any group, using the sheet or their pledge.
 
 ---
 
 ## 5. How the hour runs
 
-**Ambassador A** runs the session from the front: timer, slides and transitions.
-**Ambassador B** moves between tables, collects scores and helps any group that stalls.
+**The Ambassador** runs the session from the front: timer, slides and transitions.
+**Five student leaders**, one per table, run their table: they hand out cards, keep the clock, tally leader moves, and lead the table's reveal. They're volunteers from later years, briefed for 30 minutes beforehand. Because they never play, all 25 participants get both rounds.
 
 **Nobody is assigned as leader in either round.** That's deliberate, because the lesson is that anyone can lead from any seat.
 
 | Time | Segment | What happens | Facilitator line (A) |
 |---|---|---|---|
 | 0:00–0:05 | **Hook** | Mentimeter word cloud: *"Worst first meeting you've been in, in one word."* Read 3–4 aloud. | *"Every one of these needed one person to speak up first. Today that's you."* |
-| 0:05–0:08 | **Round 1 setup** | Each table picks an observer. Hand out Brief A (course project) and role cards set 1. Observers get the tally sheet. | *"Read your card. Keep it secret. Play it honestly, not dramatically."* |
-| 0:08–0:20 | **Round 1: cold (12 min)** | Groups run their first meeting with no guidance and write down whatever they agree. Observers tally leader moves. | *"You're a team as of now. Nobody's in charge. Go."* (2-min warning at 0:18) |
-| 0:20–0:30 | **Reveal** | Players read their role cards aloud. The observer answers *"Who led, if anyone?"* Tables **swap agreements with the next table** and score them, 1 point per box. | *"What did you learn about a teammate just now that never came up in the meeting? Whose job was it to ask?"* |
+| 0:05–0:08 | **Round 1 setup** | Student leaders hand out Brief A (course project) and role cards set 1, and keep the tally sheet. | *"Read your card. Keep it secret. Play it honestly, not dramatically."* |
+| 0:08–0:20 | **Round 1: cold (12 min)** | Groups run their first meeting with no guidance and write down whatever they agree. Student leaders tally leader moves. | *"You're a team as of now. Nobody's in charge. Go."* (2-min warning at 0:18) |
+| 0:20–0:30 | **Reveal** | Players read their role cards aloud. The student leader answers *"Who led, if anyone?"* Tables **swap agreements with the next table** and score them, 1 point per box. | *"What did you learn about a teammate just now that never came up in the meeting? Whose job was it to ask?"* |
 | 0:30–0:38 | **Teach (8 min)** | 2 slides: the 5 questions every first meeting answers and the 3 leader moves. Hand out the First-Meeting Sheet. | *"Leading a first meeting isn't about being the boss. It's about asking five questions and making sure everyone answers."* |
-| 0:38–0:40 | **Round 2 setup** | Brief B (**club committee**, a different kind of group) and role cards set 2. The observer stays the same. | *"New group, new secrets, same clock. This time, someone at your table starts it properly."* |
-| 0:40–0:52 | **Round 2: with tools (12 min)** | Same task, now with the sheet. Observers tally. | (2-min warning at 0:50) |
+| 0:38–0:40 | **Round 2 setup** | Brief B (**club committee**, a different kind of group) and role cards set 2. Same student leader. | *"New group, new secrets, same clock. This time, someone at your table starts it properly."* |
+| 0:40–0:52 | **Round 2: with tools (12 min)** | Same task, now with the sheet. Student leaders tally. | (2-min warning at 0:50) |
 | 0:52–0:55 | **Score** | Swap and score again. A reads out each table's Round 1 → Round 2 score. | *"Table 3 went from 3 to 9. Different group, same people, 30 minutes apart."* |
 | 0:55–1:00 | **Pledge + exit card** | Write the 3-line leader pledge, photograph it, and hand in the exit card. | *"You've got a first meeting this week. Be the one who starts it."* |
 
@@ -103,7 +103,7 @@ Teach is the only 8 minutes of listening (the Hook is a live poll), so participa
 | 4 | **When do we work?** | ⑦ Regular meeting time set · ⑧ An internal deadline before the real one |
 | 5 | **What if it goes wrong?** | ⑨ Everyone's constraints / unavailable weeks written down · ⑩ A rule for missed deadlines or conflict (incl. who to escalate to) |
 
-**3 leader moves.** The observer tallies these for every player, because anyone can make them from any seat.
+**3 leader moves.** The student leader tallies these for every player, because anyone can make them from any seat.
 
 | Move | What it sounds like | Inner skill |
 |---|---|---|
@@ -136,8 +136,8 @@ Teach is the only 8 minutes of listening (the Hook is a live poll), so participa
 
 | Item | Contents | Qty / session |
 |---|---|---|
-| **Observer tally sheet** | A grid of 5 players × 3 leader moves for each round | 5 |
-| **First-Meeting Sheet** | The 5 questions, each with 2 tick boxes and space to write. Filled in during each round, then scored by the next table | 30 per round + 30 to take home |
+| **Leader-move tally sheet** (held by the student leader) | A grid of 5 players × 3 leader moves for each round | 5 |
+| **First-Meeting Sheet** | The 5 questions, each with 2 tick boxes and space to write. Filled in during each round, then scored by the next table | 25 per round + 25 to take home |
 | **Leader pledge card** (business-card size) | *1. In my next first meeting, I'll open by ___. · 2. I'll make sure ___ gets heard. · 3. When I sense tension, I'll say ___.* | 30 |
 | **Exit card** | Confidence to lead a first meeting, before today (1–5) and now (1–5) · The first meeting I'll lead or shape next · Email for the 4-week follow-up (optional) | 30 |
 
@@ -158,7 +158,7 @@ Teach is the only 8 minutes of listening (the Hook is a live poll), so participa
 | Level | Measure | When | Target |
 |---|---|---|---|
 | Group | Sheet score, R1 vs R2 (peer-scored by the next table) | In room | Every group ≥ 8/10 in R2 and higher than its R1 score |
-| Individual | Observer tally of leader moves, R1 vs R2 | In room | Every player ≥ 2 of 3 in R2 |
+| Individual | Student leader's tally of leader moves, R1 vs R2 | In room | Every player ≥ 2 of 3 in R2 |
 | Confidence | Exit card retrospective rating (before vs now, 1–5) | In room | Average rises by ≥ 1 point |
 | Lasting | 3-question Microsoft Forms survey in week 4: *Did you lead or shape a first meeting? Did you use the sheet or your pledge? What happened?* | Week 4 | ≥ 50% of respondents say yes |
 
@@ -182,8 +182,9 @@ Teach is the only 8 minutes of listening (the Hook is a live poll), so participa
 - **"Why not just hand out a template?"** Students ignore templates. Round 1 makes the gap felt first.
 - **"Isn't Round 2 better just from practice?"** Partly, which is why Round 2 uses a different kind of group (see the limitation above).
 - **"What if students won't open up?"** The role cards are fictional, so they talk about a character, not themselves.
-- **"What if only 12 show up?"** It works with 2 to 5 tables of 4 to 6 people.
-- **"Why Ambassadors?"** Near-peer credibility. They've sat through these meetings themselves.
+- **"What if only 12 show up?"** It works with 2 to 5 tables of 4 to 6 people, with one student leader per table.
+- **"Why Ambassadors and student leaders?"** Near-peer credibility. They've sat through these meetings themselves.
+- **"What do the student leaders get out of it?"** Real practice leading a room: running a table, keeping time and giving feedback. The workshop builds leaders on both sides of the table, and the role works as a stepping stone to becoming an Ambassador.
 
 ### What we rejected, and why (for Planning and Reflection)
 

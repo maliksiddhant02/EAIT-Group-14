@@ -54,7 +54,7 @@ These are talking points, not lines to memorise. Hit each point in your own word
 
 Say each number with **what's counted, who counts it, and when**. Don't skip the "who": it's what makes the objectives measurable.
 - ▸ **8 of 10** boxes on every group's Round 2 sheet, by the end of the hour. The next table scores it, so nobody marks their own work.
-- ▸ **2 of 3** leader moves by every player in Round 2, ticked by the table's observer. The three moves are coming up in a minute.
+- ▸ **2 of 3** leader moves by every player in Round 2, ticked by the table's student leader. The three moves are coming up in a minute.
 - ▸ **50%** lead or shape a real first meeting within 4 weeks. We check with a 3-question form in week 4, counting people who reply.
 
 ## 5 · One hour, two first meetings · 2:20–2:50 · B
@@ -69,15 +69,18 @@ Say each number with **what's counted, who counts it, and when**. Don't skip the
 - ▸ Only 8 minutes is listening. They're doing something for 52 of the 60.
 - ▸ Round 2 is a club committee, not a course team. It's a different kind of group on purpose, to test whether the skill transfers rather than whether they've memorised it.
 
-## 6 · Five tables, two facilitators · 2:50–3:10 · B
+## 6 · Five tables, five student leaders · 2:50–3:15 · B
 
-- 30 students at 5 tables of 6: five players and one observer at each. The observer holds the tally sheet for the leader moves.
-- Two EAIT Ambassadors: A runs the front and the clock, B moves between tables.
-- Point at the key in the top-right corner: filled dots are players and hollow dots are observers. Point at B moving around the room.
+- 25 students at 5 tables, five players each, so everyone in the room plays. Nobody sits out.
+- One EAIT Ambassador runs the front: the slides and the clock.
+- ▸ A student leader joins each table. These are volunteers from later years who've already lived through these first meetings. Each one runs their table:
+  - keeps the clock
+  - ticks the leader-move tally
+  - leads the table's reveal
+- Say what's in it for them: the student leaders get real practice leading a room. The workshop builds leaders on both sides of the table.
 - ▸ The label flips to Round 2. Same room, same people, different group.
-- Keep it short; the picture does the work.
 
-## 7 · Five players, five secrets · 3:10–3:40 · B
+## 7 · Five players, five secrets · 3:15–3:40 · B
 
 - Each player gets a secret role card.
 - ▸ The cards flip. Name two or three as they land:
@@ -117,7 +120,7 @@ Say each number with **what's counted, who counts it, and when**. Don't skip the
 ## 10 · $95 and a tutorial room · 5:20–5:50 · C
 
 - ▸ The receipt: printing (the sheets, role cards and tally sheets), snacks, and a small prize to get people to fill in the week 4 form. **$95 a session.**
-- ▸ Two Ambassadors, with a 30-minute briefing.
+- ▸ One Ambassador and five volunteer student leaders, with a 30-minute briefing.
 - ▸ Any tutorial room with five tables and a screen.
 - ▸ Week 1, three sessions, promoted through ENGG1100, COMP1100 and DECO1800.
 - The point: this could run next O-Week with nothing new built.
