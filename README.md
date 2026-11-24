@@ -10,7 +10,7 @@ A 60-minute workshop that teaches first-year EAIT students to lead a group's fir
 
 ```
 pitch/
-  deck.html        The pitch deck: title, 11 animated slides (about 6:35), then a Q&A screen
+  deck.html        The pitch deck: title, 11 animated slides (about 6:10), then a Q&A screen
   script.md        Talking points per slide, click cues, timing, what to cut
   answers.md       Prepared answers to the five questions on the Q&A screen
 workshop/
@@ -39,5 +39,5 @@ reference/
 
 - [ ] **Pilot it:** run Round 1, Teach and Round 2 with 6 people (about 40 minutes). Replace the illustrative 3 → 9 on slide 8 with the real scores.
 - [ ] Print the Quiet One role card for the live moment on slide 7, and a scorecard to hand each judge.
-- [ ] Rehearse to 6:30 with the clicker.
+- [ ] Rehearse to 6:10 with the clicker.
 - [ ] Ask the organisers whether they need a `.pptx` file, whether there's Q&A, and whether the deck is submitted beforehand.

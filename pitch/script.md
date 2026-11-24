@@ -2,7 +2,7 @@
 
 These are talking points, not lines to memorise. Hit each point in your own words. Lines in quotes are optional anchors, worth saying close to word for word.
 
-**Length:** 11 slides plus the title card, about 6:35, with 25 seconds spare inside the 7-minute limit.
+**Length:** 11 slides plus the title card, about 6:10, with 50 seconds spare inside the 7-minute limit.
 **Clicks:** `▸` marks one click. Every slide waits for your click, so you set the pace.
 **Speakers:** suggested 3-way split, shown as **A / B / C** below. Adjust it to your team size.
 
@@ -13,7 +13,7 @@ These are talking points, not lines to memorise. Hit each point in your own word
 | 1:05 | Slide 3 (the scorecard) |
 | 2:35 | Slide 5 (the room) |
 | 4:15 | Slide 8 (the scores) |
-| 6:00 | Slide 11 (close) |
+| 5:45 | Slide 11 (close) |
 
 ---
 
@@ -121,22 +121,22 @@ The full wording is in `scripts/section-9-into-first-year.md`.
 - ▸ **O-Week to week 2:** it runs alongside those courses, starting in orientation week before uni begins.
 - ▸ The strip fills in: three sessions, before and alongside the first group projects.
 
-## 10 · $95 and a tutorial room · 5:30–6:00 · C
+## 10 · $95 and a tutorial room · 5:30–5:45 · C
 
-- ▸ The receipt: printing (scorecards, role cards and pledge cards), snacks, and a small prize to get people to fill in the week 4 form. **$95 a session.**
-- ▸ Seven volunteer student leaders, five at tables and two on the floor, with a 30-minute briefing.
-- ▸ Any tutorial room with five tables and a screen.
-- ▸ O-Week to week 2, three sessions, alongside ENGG1100 and COMP1100.
-- The point: this could run next O-Week with nothing new built.
+The full wording is in `scripts/section-10-11-feasibility-and-close.md`. Slides 10 and 11 together take about 38 seconds.
+- ▸ About $95 a session.
+- ▸ Seven volunteer student leaders.
+- ▸ Any tutorial room.
+- ▸ Three sessions, O-Week to week 2. Affordable, easy to run, repeatable.
 
-## 11 · Close · 6:00–6:30 · C
+## 11 · Close · 5:45–6:10 · C
 
-- Everyone leaves with a blank scorecard for their real team's first meeting, plus this pledge.
-- ▸ ▸ ▸ Read the pledge lines as they write themselves. Slow down here.
-- ▸ The name appears: **Before the Group Chat**. Stop talking for a beat.
-- Close the loop with slide 1: that chat died because nobody led the meeting before it.
-- Anchor: *"You don't need a title to lead. Be the one who starts it."* Then "Thank you."
-
+- "The real outcome is better teammates. Everyone leaves with a pledge."
+- Name an inner skill as each pledge line writes itself:
+  - ▸ Open the meeting: self mastery.
+  - ▸ Make sure the quiet voice is heard: empathy.
+  - ▸ Name the tension: emotional awareness. Doing it twice builds resilience.
+- ▸ The name appears. Anchor: *"All it takes to build a better team is a better first meeting. You don't need a title to lead. Be the one who starts it."* Pause, then "Thank you."
 
 ## 12 · Questions screen · after the clock
 
