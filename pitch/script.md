@@ -2,7 +2,7 @@
 
 These are talking points, not lines to memorise. Hit each point in your own words. Lines in quotes are optional anchors, worth saying close to word for word.
 
-**Length:** 10 slides, about 6:15, with 45 seconds spare inside the 7-minute limit.
+**Length:** 10 slides, about 6:05, with 55 seconds spare inside the 7-minute limit.
 **Clicks:** `▸` marks one click. Every slide waits for your click, so you set the pace.
 **Speakers:** suggested 3-way split, shown as **A / B / C** below. Adjust it to your team size.
 
@@ -11,9 +11,9 @@ These are talking points, not lines to memorise. Hit each point in your own word
 | Checkpoint | You should be on |
 |---|---|
 | 1:05 | Slide 3 (the scorecard) |
-| 2:40 | Slide 5 (the room) |
-| 4:25 | Slide 8 (the scores) |
-| 5:45 | Slide 10 (close) |
+| 2:35 | Slide 5 (the room) |
+| 4:15 | Slide 8 (the scores) |
+| 5:35 | Slide 10 (close) |
 
 ---
 
@@ -50,30 +50,27 @@ These are talking points, not lines to memorise. Hit each point in your own word
 - ▸ Eight boxes tick. Two stay empty, because nobody gets a perfect score, and 8 of 10 is the Round 2 target.
 - Hand-off: "So how does the hour run?"
 
-## 4 · One hour, two first meetings · 1:50–2:40 · A → hand to B
+## 4 · One hour, two first meetings · 1:50–2:35 · A
 
-- The workshop in one line: **a single 60-minute workshop that simulates a real first meeting, twice, under realistic pressure**.
-- Walk the bar left to right:
-  - **Hook:** open questions, hands up. *"Who's been ghosted in the team group chat?" "Who's done the whole group's work the night before the deadline?"* It ties the workshop to something they've already lived.
-  - **Round 1:** groups of 5 get a fictional project brief from coursework, like ENGG1100 or COMP1100, and 15 minutes to run their first ever meeting. The table's student leader ticks the scorecard as they go.
-  - **Score:** the student leader tells the group its score out of 10.
-  - **Teach:** a short session built around the scorecard and the three moves. This is the only listening block.
-  - **Round 2:** the same thing in a student society. The skills transfer, but they can't just be copied across.
-  - **Pledge:** the Round 2 score, then a short reflective pledge card they take into their next group project.
-- ▸ 10 minutes of listening, 50 minutes of doing.
-- ▸ Say why Round 2 changes context: if we kept the same project, we'd be testing memory. A new kind of group tests the skill.
-- Hand-off: "So who's in the room?"
+The full wording is in `scripts/section-4-the-hour.md`, which stays local only. The timeline builds one block per click, so say each beat as its block appears. The duration shows above the block, and the detail drops in below.
 
-## 5 · Five tables, seven student leaders · 2:40–3:00 · B
+- Open on the empty hour: one 60-minute workshop that simulates a real first meeting, twice.
+- ▸ **Hook:** hands up if you've been ghosted in the team group chat, or done everyone's work the night before.
+- ▸ **Round 1:** groups of five, a fictional coursework brief, their first ever meeting, scored live by the student leader.
+- ▸ **Score:** they hear their score out of 10.
+- ▸ **Teach:** a short teach built around the scorecard.
+- ▸ **Round 2:** a student society, so the skills have to transfer, not just be copied.
+- ▸ **Pledge:** a reflective pledge card for their next group project.
+- ▸ 10 minutes of listening, 50 of doing.
 
-- 25 students at 5 tables of 5, so everyone in the room plays. Nobody sits out.
-- ▸ The student leaders appear:
-  - **one at each table**, holding the scorecard and the move tally, who reads out the score after each round
-  - **two more on the floor**: one runs the front (slides, clock, teaching), and one roams to unstick any table that stalls
-- These are volunteers from later years who've lived through these first meetings. They get real practice leading a room, so the workshop builds leaders on both sides of the table.
-- ▸ The label flips to Round 2: same room, same people, a student society this time.
+## 5 · Five tables, seven student leaders · 2:35–2:50 · A → hand to B
 
-## 6 · Five players, five secrets · 3:00–3:25 · B
+**Switch to this slide** as you start describing the tables, with "Here's the room."
+- ▸ The leaders appear: five participants and a student leader at every table, plus two more on the floor.
+- ▸ The label flips to Round 2: same room for both rounds.
+- Hand over to B.
+
+## 6 · Five players, five secrets · 2:50–3:15 · B
 
 - Each player gets a secret role card.
 - ▸ The cards flip. Name two or three as they land:
@@ -84,7 +81,7 @@ These are talking points, not lines to memorise. Hit each point in your own word
 - They're fictional on purpose, so nobody shares their own life.
 - ▸ Nobody mentions theirs unless someone asks, and in Round 1 almost nobody does. That's why Round 1 scores come back low.
 
-## 7 · Three moves, any seat · 3:25–4:25 · B → hand to C
+## 7 · Three moves, any seat · 3:15–4:15 · B → hand to C
 
 - **Live moment.** Before clicking, hand a judge the printed Quiet One card.
 - ▸ The card flips on screen. Turn to the judge.
@@ -98,7 +95,7 @@ These are talking points, not lines to memorise. Hit each point in your own word
 - Backup if the judge won't play: a teammate plays the Quiet One.
 - Hand-off: "So how do we know it worked?"
 
-## 8 · Same people, thirty minutes apart · 4:25–5:15 · C
+## 8 · Same people, thirty minutes apart · 4:15–5:05 · C
 
 - ▸ Round 1 scores are low, because nobody asks the five questions.
 - ▸ Round 2 clears the target of 8. ▸ Table 1 goes from 3 to 9.
@@ -110,7 +107,7 @@ These are talking points, not lines to memorise. Hit each point in your own word
   - **Exit card:** confidence from 1 to 5, before versus now. This one is a bonus measure.
 - Name the obvious objection before they do: some of the gain is just doing it twice. That's why Round 2 is a different kind of group.
 
-## 9 · $95 and a tutorial room · 5:15–5:45 · C
+## 9 · $95 and a tutorial room · 5:05–5:35 · C
 
 - ▸ The receipt: printing (scorecards, role cards and pledge cards), snacks, and a small prize to get people to fill in the week 4 form. **$95 a session.**
 - ▸ Seven volunteer student leaders, five at tables and two on the floor, with a 30-minute briefing.
@@ -118,7 +115,7 @@ These are talking points, not lines to memorise. Hit each point in your own word
 - ▸ Week 1, three sessions, promoted through ENGG1100, COMP1100 and DECO1800.
 - The point: this could run next O-Week with nothing new built.
 
-## 10 · Close · 5:45–6:15 · C
+## 10 · Close · 5:35–6:05 · C
 
 - Everyone leaves with a blank scorecard for their real team's first meeting, plus this pledge.
 - ▸ ▸ ▸ Read the pledge lines as they write themselves. Slow down here.
@@ -131,8 +128,8 @@ These are talking points, not lines to memorise. Hit each point in your own word
 ## If you're running long
 
 Cut in this order:
-1. Slide 5: say one sentence and click through.
-2. Slide 4: skip the block-by-block walk and just say "50 of 60 minutes doing".
+1. Slide 5: click both builds while saying the one sentence.
+2. Slide 4: click through the blocks briskly and only speak to Round 1, Teach and Round 2.
 3. Slide 9: show the receipt total only and skip the icons.
 
 **Never cut** the scorecard (slide 3), the live moment (slide 7) or the close.

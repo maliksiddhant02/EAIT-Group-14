@@ -206,5 +206,5 @@ The deck is [`pitch/deck.html`](../pitch/deck.html) and the talking points are i
 - [ ] **Pilot 20 minutes** (Round 1 → Teach → Round 2) with 6 friends or a residential college, and put the real numbers on slide 8. The ideas sheet calls this the single biggest edge we can get.
 - [ ] **Check ENGG1100's existing team process** (an older UQ page mentions "PETS"). If it exists, position Before the Group Chat as practice that complements it.
 - [ ] Print the Quiet One card and a scorecard for each judge.
-- [ ] Rehearse to 6:15.
+- [ ] Rehearse to 6:05.
 - [ ] Ask the organisers: is there Q&A after the pitch, and is the deck submitted beforehand?

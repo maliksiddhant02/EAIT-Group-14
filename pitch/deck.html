@@ -79,10 +79,25 @@ svg{overflow:visible}
 .q p{display:flex;gap:14px;font:400 26px/1.35 var(--font);margin:0 0 18px}
 .q svg{flex:none;margin-top:4px}
 /* 4 · the hour */
-.bar{display:flex;height:150px}
-.seg{height:150px;flex:none;background:var(--ink);color:var(--paper);padding:28px 18px;overflow:hidden;border-right:4px solid var(--bg);white-space:nowrap}
-.seg b{display:block;font:600 28px/1.2 var(--font)}
-.seg span{font:400 24px/1.6 var(--font);opacity:.75}
+.track{position:absolute;left:160px;top:370px;width:1600px;height:110px;border:2px dashed var(--line);border-radius:6px}
+.bar{display:flex;height:110px}
+.seg{height:110px;flex:none;background:var(--ink);color:var(--paper);padding:0 16px;display:flex;align-items:center;overflow:hidden;border-right:4px solid var(--bg);white-space:nowrap;font:600 28px var(--font)}
+.dur{position:absolute;top:316px;width:160px;margin-left:-80px;text-align:center;font:600 28px var(--font)}
+.det{position:absolute;top:546px}
+.det .pin{position:absolute;top:0;width:3px;height:54px;background:var(--acc);border-radius:2px}
+.det .pin::after{content:'';position:absolute;bottom:-6px;left:-5px;width:13px;height:13px;border-radius:50%;background:var(--acc)}
+.det .body{padding-top:86px}
+.det.r{text-align:right}
+.det h4{font:600 40px/1.2 var(--font);margin:0 0 8px}
+.det p{font:400 30px/1.4 var(--font);color:var(--grey);margin:0}
+.bub{display:block;width:fit-content;border:3px solid var(--ink);border-radius:32px;padding:12px 28px;font:italic 400 30px/1.35 var(--font);margin-bottom:16px}
+.items{display:flex;gap:56px}
+.det.r .items{justify-content:flex-end}
+.item{display:flex;gap:18px;align-items:center;text-align:left}
+.item b{display:block;font:600 32px/1.2 var(--font)}
+.item span{font:400 24px var(--font);color:var(--grey)}
+.bigscore{font:600 96px/1 var(--font);color:var(--acc);letter-spacing:-.03em}
+.bigscore small{font-size:48px;color:var(--grey)}
 .seg.out{background:transparent;color:var(--ink);box-shadow:inset 0 0 0 3px var(--ink)}
 .seg.r2{background:var(--acc)}
 .ticks span{position:absolute;transform:translateX(-50%);font:500 24px var(--font);color:var(--grey)}
@@ -192,20 +207,48 @@ svg{overflow:visible}
 
 <!-- 4 · THE HOUR -->
 <section class="slide">
-  <h2 class="h">One hour.<br>Two first meetings.</h2>
-  <div class="abs bar" style="left:160px;top:400px;width:1600px">
-    <div class="seg grow-x" data-step="0" style="width:133.3px;--d:.2s;padding:28px 12px"><b>Hook</b><span style="font-size:22px">hands up</span></div>
-    <div class="seg grow-x" data-step="0" style="width:400px;--d:.4s"><b>Round 1</b><span>coursework team</span></div>
-    <div class="seg grow-x" data-step="0" style="width:133.3px;--d:.6s;padding:28px 12px"><b>Score</b><span>/10</span></div>
-    <div class="seg grow-x out" data-step="0" style="width:266.7px;--d:.8s"><b>Teach</b><span>scorecard + moves</span></div>
-    <div class="seg grow-x r2" data-step="0" style="width:400px;--d:1s"><b>Round 2</b><span>student society</span></div>
-    <div class="seg grow-x" data-step="0" style="width:266.7px;--d:1.2s;border:0"><b>Pledge</b><span>score + pledge</span></div>
-  </div>
-  <div class="abs ticks" data-step="0" style="left:160px;top:572px;width:1600px;--d:1.4s">
+  <h2 class="h">One hour. Two first meetings.</h2>
+  <div class="track"></div>
+  <div class="abs ticks" style="left:160px;top:496px;width:1600px">
     <span style="left:0">0</span><span style="left:133.3px">5</span><span style="left:533.3px">20</span><span style="left:666.7px">25</span><span style="left:933.3px">35</span><span style="left:1333.3px">50</span><span style="left:1600px">60</span>
   </div>
-  <div class="abs stat" data-step="1" style="left:160px;top:700px"><b>10</b> minutes listening. <b class="acc">50</b> minutes doing.</div>
-  <div class="abs stat grey" data-step="2" style="left:160px;top:800px;font-size:36px">Round 2 moves to a student society: the skills<br><b style="color:var(--ink)">transfer</b>, they can't just be copied.</div>
+  <span class="dur" data-step="1" style="left:226.7px">5 min</span>
+  <span class="dur" data-step="2" style="left:493.3px">15 min</span>
+  <span class="dur" data-step="3" style="left:760px">5 min</span>
+  <span class="dur" data-step="4" style="left:960px">10 min</span>
+  <span class="dur acc" data-step="5" style="left:1293.3px">15 min</span>
+  <span class="dur" data-step="6" style="left:1626.7px">10 min</span>
+  <div class="abs bar" style="left:160px;top:370px;width:1600px">
+    <div class="seg grow-x" data-step="1" style="width:133.3px">Hook</div>
+    <div class="seg grow-x" data-step="2" style="width:400px">Round 1</div>
+    <div class="seg grow-x" data-step="3" style="width:133.3px">Score</div>
+    <div class="seg grow-x out" data-step="4" style="width:266.7px">Teach</div>
+    <div class="seg grow-x r2" data-step="5" style="width:400px">Round 2</div>
+    <div class="seg grow-x" data-step="6" style="width:266.7px;border:0">Pledge</div>
+  </div>
+
+  <div class="det" data-step="1" data-until="2" style="left:160px;--d:.4s"><i class="pin" style="left:65px"></i><div class="body">
+    <p style="margin-bottom:14px">Hands up if…</p>
+    <span class="bub">“…you’ve been ghosted in the team group chat.”</span>
+    <span class="bub">“…you’ve done the whole group’s work the night before.”</span>
+  </div></div>
+  <div class="det" data-step="2" data-until="3" style="left:433px;--d:.4s"><i class="pin" style="left:59px"></i><div class="body"><div class="items">
+    <div class="item"><svg width="64" height="64" viewBox="0 0 64 64"><circle cx="32" cy="12" r="7" fill="#1C1B19"/><circle cx="51" cy="26" r="7" fill="#1C1B19"/><circle cx="44" cy="49" r="7" fill="#1C1B19"/><circle cx="20" cy="49" r="7" fill="#1C1B19"/><circle cx="13" cy="26" r="7" fill="#1C1B19"/></svg><div><b>Groups of 5</b><span>their first ever meeting</span></div></div>
+    <div class="item"><svg width="64" height="64" viewBox="0 0 64 64"><path class="ln" style="stroke-width:3.5" d="M16 6 H40 L50 16 V58 H16 Z M24 26 H42 M24 36 H42 M24 46 H36"/></svg><div><b>A fictional brief</b><span>coursework: ENGG1100, COMP1100</span></div></div>
+    <div class="item"><svg width="64" height="64" viewBox="0 0 64 64"><rect x="8" y="8" width="48" height="48" rx="8" fill="none" stroke="#1C1B19" stroke-width="3.5"/><path d="M18 33 L28 43 L47 21" fill="none" stroke="#C8553D" stroke-width="5" stroke-linecap="round" stroke-linejoin="round"/></svg><div><b>Scored live</b><span>by the student leader</span></div></div>
+  </div></div></div>
+  <div class="det" data-step="3" data-until="4" style="left:700px;--d:.4s"><i class="pin" style="left:59px"></i><div class="body" style="display:flex;align-items:center;gap:36px">
+    <div class="bigscore">3<small>/10</small></div><p style="color:var(--ink)">The student leader reads out<br>each table's score.</p>
+  </div></div>
+  <div class="det" data-step="4" data-until="5" style="left:900px;--d:.4s"><i class="pin" style="left:59px"></i><div class="body"><div class="item"><svg width="64" height="64" viewBox="0 0 64 64"><rect x="6" y="18" width="8" height="8" rx="1.5" fill="none" stroke="#1C1B19" stroke-width="2.5"/><rect x="17" y="18" width="8" height="8" rx="1.5" fill="none" stroke="#1C1B19" stroke-width="2.5"/><rect x="28" y="18" width="8" height="8" rx="1.5" fill="none" stroke="#1C1B19" stroke-width="2.5"/><rect x="39" y="18" width="8" height="8" rx="1.5" fill="none" stroke="#1C1B19" stroke-width="2.5"/><rect x="50" y="18" width="8" height="8" rx="1.5" fill="none" stroke="#1C1B19" stroke-width="2.5"/><rect x="6" y="34" width="8" height="8" rx="1.5" fill="none" stroke="#1C1B19" stroke-width="2.5"/><rect x="17" y="34" width="8" height="8" rx="1.5" fill="none" stroke="#1C1B19" stroke-width="2.5"/><rect x="28" y="34" width="8" height="8" rx="1.5" fill="none" stroke="#1C1B19" stroke-width="2.5"/><rect x="39" y="34" width="8" height="8" rx="1.5" fill="none" stroke="#1C1B19" stroke-width="2.5"/><rect x="50" y="34" width="8" height="8" rx="1.5" fill="none" stroke="#1C1B19" stroke-width="2.5"/></svg><div><b>A short teach</b><span style="font-size:30px">on the scorecard and the three moves</span></div></div></div></div>
+  <div class="det r" data-step="5" data-until="6" style="right:160px;--d:.4s"><i class="pin" style="right:465px"></i><div class="body">
+    <h4>A student society brief</h4><p>The skills transfer. They can't just be copied.</p>
+  </div></div>
+  <div class="det r" data-step="6" data-until="7" style="right:160px;--d:.4s"><i class="pin" style="right:131.5px"></i><div class="body" style="display:flex;align-items:center;gap:36px;justify-content:flex-end">
+    <p style="color:var(--ink)">Score again, then a reflective<br>pledge card for their next group.</p><div class="bigscore">9<small>/10</small></div>
+  </div></div>
+
+  <div class="abs stat" data-step="7" style="left:160px;top:640px;font-size:52px"><b>10</b> minutes listening. <b class="acc">50</b> minutes doing.</div>
 </section>
 
 <!-- 5 · THE ROOM -->
