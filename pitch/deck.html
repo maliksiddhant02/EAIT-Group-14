@@ -131,6 +131,15 @@ svg{overflow:visible}
 .measure span{font:400 26px/1.4 var(--font);color:var(--grey)}
 .measure span b{font-weight:600}
 
+/* 9 · next steps */
+.node{position:absolute;top:290px;width:460px;margin-left:-230px;text-align:center}
+.node .ring{width:128px;height:128px;border-radius:50%;border:3px solid var(--ink);background:var(--paper);margin:0 auto 26px;display:grid;place-items:center}
+.node b{display:block;font:600 36px/1.2 var(--font)}
+.node span{display:block;font:400 26px/1.4 var(--font);color:var(--grey);margin-top:6px}
+.strip{display:grid;grid-template-columns:repeat(7,1fr);gap:10px}
+.cell{position:relative;height:92px;border:2px solid var(--line);border-radius:10px;display:grid;place-items:center;font:500 26px var(--font);color:var(--grey)}
+.cell .fill{position:absolute;inset:-2px;border-radius:10px;background:var(--acc);color:var(--paper);display:grid;place-items:center;font:600 26px var(--font)}
+
 /* 7 · feasibility */
 .paper{background:var(--paper);box-shadow:0 1px 0 rgba(28,27,25,.06),0 16px 36px rgba(28,27,25,.09)}
 .receipt{font:400 28px/2 var(--font);padding:40px 40px 26px}
@@ -343,7 +352,21 @@ svg{overflow:visible}
   </div>
 </section>
 
-<!-- 9 · CAN IT RUN AT UQ -->
+<!-- 9 · INTO FIRST YEAR -->
+<section class="slide">
+  <h2 class="h">How it gets into first year.</h2>
+  <svg class="abs" style="left:0;top:0" width="1920" height="1080">
+    <g class="draw" data-step="2"><path class="ln" pathLength="1" d="M464 354 H896"/></g>
+    <g class="draw" data-step="3"><path class="ln" pathLength="1" d="M1024 354 H1456"/></g>
+  </svg>
+  <div class="node" data-step="1" style="left:400px"><div class="ring"><svg width="72" height="72" viewBox="0 0 72 72"><path class="ln" style="stroke-width:3.5" d="M10 26 L36 12 L62 26 Z M16 30 V54 M28 30 V54 M44 30 V54 M56 30 V54 M8 60 H64"/></svg></div><b>UQ Employability</b><span>funding and set-up</span></div>
+  <div class="node" data-step="2" style="left:960px;--d:.6s"><div class="ring"><svg width="72" height="72" viewBox="0 0 72 72"><path class="ln" style="stroke-width:3.5" d="M10 30 V44 H20 L46 58 V16 L20 30 Z M20 44 L24 58 H30 L28 46 M54 28 Q60 37 54 46"/></svg></div><b>ENGG1100 · COMP1100</b><span>coordinators and mentors<br>spread the word</span></div>
+  <div class="node" data-step="3" style="left:1520px;--d:.6s"><div class="ring"><svg width="72" height="72" viewBox="0 0 72 72"><rect class="ln" style="stroke-width:3.5" x="8" y="14" width="56" height="50" rx="5"/><path class="ln" style="stroke-width:3.5" d="M8 28 H64 M22 8 V20 M50 8 V20"/><circle cx="22" cy="45" r="5" fill="#C8553D"/><circle cx="36" cy="45" r="5" fill="#C8553D"/><circle cx="50" cy="45" r="5" fill="#C8553D"/></svg></div><b>O-Week to week 2</b><span>runs alongside<br>the courses</span></div>
+  <div class="abs strip" data-step="4" style="left:160px;top:720px;width:1600px"><div class="cell">O-Week<div class="fill" data-step="4" style="--d:0.50s">O-Week</div></div><div class="cell">Week 1<div class="fill" data-step="4" style="--d:0.75s">Week 1</div></div><div class="cell">Week 2<div class="fill" data-step="4" style="--d:1.00s">Week 2</div></div><div class="cell">Week 3</div><div class="cell">Week 4</div><div class="cell">Week 5</div><div class="cell">Week 6</div></div>
+  <div class="abs grey" data-step="4" style="left:160px;top:840px;font:400 28px var(--font);--d:1.4s">Three sessions, before and alongside the first group projects.</div>
+</section>
+
+<!-- 10 · CAN IT RUN AT UQ -->
 <section class="slide">
   <h2 class="h">$95 and a tutorial room.</h2>
   <div class="abs drop" data-step="1" style="left:160px;top:280px;width:580px">
@@ -369,11 +392,11 @@ svg{overflow:visible}
   </div>
   <div class="abs who" data-step="4" style="left:880px;top:720px">
     <svg class="draw" data-step="4" width="110" height="110" viewBox="0 0 72 72"><rect class="ln" pathLength="1" style="stroke-width:3" x="8" y="14" width="56" height="50" rx="4"/><path class="ln" pathLength="1" style="stroke-width:3" d="M8 28 H64 M22 8 V20 M50 8 V20"/><circle cx="22" cy="45" r="5" fill="#C8553D"/><circle cx="36" cy="45" r="5" fill="#C8553D"/><circle cx="50" cy="45" r="5" fill="#C8553D"/></svg>
-    <div><b>Week 1, three sessions</b><span>promoted in ENGG1100, COMP1100, DECO1800</span></div>
+    <div><b>O-Week to week 2</b><span>three sessions, alongside ENGG1100 and COMP1100</span></div>
   </div>
 </section>
 
-<!-- 10 · CLOSE -->
+<!-- 11 · CLOSE -->
 <section class="slide">
   <div class="abs" data-step="0" data-until="4" style="left:410px;top:200px;width:1100px">
     <div class="paper pledge">
@@ -441,7 +464,7 @@ if (still) document.head.insertAdjacentHTML('beforeend', '<style>*,*::before,*::
   $('#bars').innerHTML = h;
 })();
 
-// slide 9: receipt's torn bottom edge
+// slide 10: receipt's torn bottom edge
 $('#zig').setAttribute('d', 'M0 0 H580 ' + Array.from({length: 29}, (_, i) => `L${570 - i * 20} 14 L${560 - i * 20} 0`).join(' ') + ' Z');
 
 // line drawings: measure each stroke so it can draw itself on

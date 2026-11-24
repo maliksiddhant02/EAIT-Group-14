@@ -2,7 +2,7 @@
 
 These are talking points, not lines to memorise. Hit each point in your own words. Lines in quotes are optional anchors, worth saying close to word for word.
 
-**Length:** 10 slides, about 6:05, with 55 seconds spare inside the 7-minute limit.
+**Length:** 11 slides, about 6:30, with 30 seconds spare inside the 7-minute limit.
 **Clicks:** `▸` marks one click. Every slide waits for your click, so you set the pace.
 **Speakers:** suggested 3-way split, shown as **A / B / C** below. Adjust it to your team size.
 
@@ -13,7 +13,7 @@ These are talking points, not lines to memorise. Hit each point in your own word
 | 1:05 | Slide 3 (the scorecard) |
 | 2:35 | Slide 5 (the room) |
 | 4:15 | Slide 8 (the scores) |
-| 5:35 | Slide 10 (close) |
+| 6:00 | Slide 11 (close) |
 
 ---
 
@@ -107,15 +107,23 @@ The full wording is in `scripts/section-4-the-hour.md`, which stays local only. 
   - **Exit card:** confidence from 1 to 5, before versus now. This one is a bonus measure.
 - Name the obvious objection before they do: some of the gain is just doing it twice. That's why Round 2 is a different kind of group.
 
-## 9 · $95 and a tutorial room · 5:05–5:35 · C
+## 9 · How it gets into first year · 5:05–5:30 · C
+
+The full wording is in `scripts/section-9-into-first-year.md`.
+- ▸ **UQ Employability:** our first step is to ask them to help fund and set up the event.
+- ▸ **ENGG1100 and COMP1100:** we reach out to the course coordinators and mentors, so students hear about it from inside their first team-project courses.
+- ▸ **O-Week to week 2:** it runs alongside those courses, starting in orientation week before uni begins.
+- ▸ The strip fills in: three sessions, before and alongside the first group projects.
+
+## 10 · $95 and a tutorial room · 5:30–6:00 · C
 
 - ▸ The receipt: printing (scorecards, role cards and pledge cards), snacks, and a small prize to get people to fill in the week 4 form. **$95 a session.**
 - ▸ Seven volunteer student leaders, five at tables and two on the floor, with a 30-minute briefing.
 - ▸ Any tutorial room with five tables and a screen.
-- ▸ Week 1, three sessions, promoted through ENGG1100, COMP1100 and DECO1800.
+- ▸ O-Week to week 2, three sessions, alongside ENGG1100 and COMP1100.
 - The point: this could run next O-Week with nothing new built.
 
-## 10 · Close · 5:35–6:05 · C
+## 11 · Close · 6:00–6:30 · C
 
 - Everyone leaves with a blank scorecard for their real team's first meeting, plus this pledge.
 - ▸ ▸ ▸ Read the pledge lines as they write themselves. Slow down here.
@@ -130,7 +138,7 @@ The full wording is in `scripts/section-4-the-hour.md`, which stays local only. 
 Cut in this order:
 1. Slide 5: click both builds while saying the one sentence.
 2. Slide 4: click through the blocks briskly and only speak to Round 1, Teach and Round 2.
-3. Slide 9: show the receipt total only and skip the icons.
+3. Slide 10: show the receipt total only and skip the icons.
 
 **Never cut** the scorecard (slide 3), the live moment (slide 7) or the close.
 

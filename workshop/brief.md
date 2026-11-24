@@ -48,7 +48,7 @@ The rubric has 5 criteria with no weights given, so I've treated them as equal. 
 | **Inner skills** | **Empathy** (drawing in quiet teammates), **emotional awareness** (naming tension early), **self mastery** (stepping up and owning commitments). **Resilience** comes from doing it badly, reflecting, and going again. |
 | **Format** | One 60-minute session that simulates a real first meeting twice: 25 participants at 5 tables of 5 |
 | **Run by** | 7 volunteer student leaders from later years: one at each table, plus two on the floor (one runs the front, one roams) |
-| **Where / when** | A booked tutorial room in week 1, run 3 times across the week, promoted through ENGG1100 / COMP1100 / DECO1800 course announcements and student society channels |
+| **Where / when** | A booked tutorial room, three sessions from O-Week to week 2, alongside ENGG1100 and COMP1100. Promoted through the course coordinators and mentors. |
 | **Cost** | About $95 per session (§7) |
 | **Takeaway** | A blank scorecard and a 3-line leader pledge |
 
@@ -174,6 +174,12 @@ Teach is the only 10 minutes of listening, so participants are **doing something
 | Microsoft Forms (UQ licence), tutorial room | $0 |
 | **Total** | **~$95** |
 
+### Next steps to run it at UQ
+
+1. **UQ Employability:** ask them to help fund and set up the event.
+2. **ENGG1100 and COMP1100:** reach out to the course coordinators and mentors, so students hear about it inside their first team-project courses.
+3. **Timing:** run three sessions from O-Week to week 2, alongside those courses and before the first group projects start.
+
 ### Likely panel questions
 
 - **"Isn't 'leadership' too broad?"** We teach one leadership moment, the first meeting, with one scorecard and three moves.
@@ -206,5 +212,5 @@ The deck is [`pitch/deck.html`](../pitch/deck.html) and the talking points are i
 - [ ] **Pilot 20 minutes** (Round 1 → Teach → Round 2) with 6 friends or a residential college, and put the real numbers on slide 8. The ideas sheet calls this the single biggest edge we can get.
 - [ ] **Check ENGG1100's existing team process** (an older UQ page mentions "PETS"). If it exists, position Before the Group Chat as practice that complements it.
 - [ ] Print the Quiet One card and a scorecard for each judge.
-- [ ] Rehearse to 6:05.
+- [ ] Rehearse to 6:30.
 - [ ] Ask the organisers: is there Q&A after the pitch, and is the deck submitted beforehand?
